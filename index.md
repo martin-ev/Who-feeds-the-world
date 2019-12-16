@@ -230,18 +230,120 @@ body {font-family: Arial;}
 }
 </style>
 </div>
+<div id="ProdMaize" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
+  <div class="slidecontainerProdMaize">
+    <input type="range" min="1970" max="2015" value="2000" class="sliderProdMaize" id="myRangeProdMaize">
+    <span id="mapProdMaize"></span>
+  </div>
+  <script>
+    var sliderProdMaize = document.getElementById("myRangeProdMaize");
+    var outputProdMaize = document.getElementById("mapProdMaize");
+    outputProdMaize.innerHTML = 'ProdMaize in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    sliderProdMaize.oninput = function() {
+      outputProdMaize.innerHTML = 'ProdMaize in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+    }
+  </script>
+  <style>
+.slidecontainerProdMaize {
+  width: 100%;
+}
 
-<div id="Paris" class="tabcontent">
-  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
+.sliderProdMaize {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.sliderProdMaize:hover {
+  opacity: 1;
+}
+
+.sliderProdMaize::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.sliderProdMaize::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+</style>
+</div>
+<div id="ProdGreen maize" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
+  <div class="slidecontainerProdGreen maize">
+    <input type="range" min="1970" max="2015" value="2000" class="sliderProdGreen maize" id="myRangeProdGreen maize">
+    <span id="mapProdGreen maize"></span>
+  </div>
+  <script>
+    var sliderProdGreen maize = document.getElementById("myRangeProdGreen maize");
+    var outputProdGreen maize = document.getElementById("mapProdGreen maize");
+    outputProdGreen maize.innerHTML = 'ProdGreen maize in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    sliderProdGreen maize.oninput = function() {
+      outputProdGreen maize.innerHTML = 'ProdGreen maize in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+    }
+  </script>
+  <style>
+.slidecontainerProdGreen maize {
+  width: 100%;
+}
+
+.sliderProdGreen maize {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.sliderProdGreen maize:hover {
+  opacity: 1;
+}
+
+.sliderProdGreen maize::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.sliderProdGreen maize::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+</style>
 </div>
 
-<div id="Tokyo" class="tabcontent">
-  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
+
+
+
+
+
 
 <script>
 function openCity(evt, cityName) {
