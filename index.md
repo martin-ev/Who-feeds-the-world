@@ -871,9 +871,9 @@ body {font-family: Arial;}
 </style>
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, ‘TradeCattle')" id="defaultOpen">Cattle</button>
+  <button class="tablinks" onclick="openCity(event, 'TradeCattle')" id="defaultOpen">Cattle</button>
   <button class="tablinks" onclick="openCity(event, 'TradeMaize')">Maize</button>
-  <button class="tablinks" onclick="openCity(event, 'TradeGreen_maize')">Green_maize</button>
+  <button class="tablinks" onclick="openCity(event, 'TradeGreenmaize')">Green maize</button>
   <button class="tablinks" onclick="openCity(event, 'TradeOats')">Oats</button>
   <button class="tablinks" onclick="openCity(event, 'TradePigs')">Pigs</button>
   <button class="tablinks" onclick="openCity(event, 'TradeSoybeans')">Soybeans</button>
@@ -936,7 +936,6 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-
 <div id="TradeMaize" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
   <div class="slidecontainerTradeMaize">
@@ -991,27 +990,26 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-
-<div id="TradeGreen maiz" class="tabcontent">
+<div id="TradeGreenmaize" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
-  <div class="slidecontainerTradeGreen maiz">
-    <input type="range" min="1970" max="2015" value="2000" class="sliderTradeGreen maiz" id="myRangeTradeGreen maiz">
-    <span id="mapTradeGreen maiz"></span>
+  <div class="slidecontainerTradeGreenmaize">
+    <input type="range" min="1970" max="2015" value="2000" class="sliderTradeGreenmaize" id="myRangeTradeGreenmaize">
+    <span id="mapTradeGreenmaize"></span>
   </div>
   <script>
-    var sliderTradeGreen maiz = document.getElementById("myRangeTradeGreen maiz");
-    var outputTradeGreen maiz = document.getElementById("mapTradeGreen maiz");
-    outputTradeGreen maiz.innerHTML = 'TradeGreen maiz in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
-    sliderTradeGreen maiz.oninput = function() {
-      outputTradeGreen maiz.innerHTML = 'TradeGreen maiz in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+    var sliderTradeGreenmaize = document.getElementById("myRangeTradeGreenmaize");
+    var outputTradeGreenmaize = document.getElementById("mapTradeGreenmaize");
+    outputTradeGreenmaize.innerHTML = 'TradeGreenmaize in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    sliderTradeGreenmaize.oninput = function() {
+      outputTradeGreenmaize.innerHTML = 'TradeGreenmaize in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
     }
   </script>
   <style>
-.slidecontainerTradeGreen maiz {
+.slidecontainerTradeGreenmaize {
   width: 100%;
 }
 
-.sliderTradeGreen maiz {
+.sliderTradeGreenmaize {
   -webkit-appearance: none;
   width: 100%;
   height: 15px;
@@ -1023,11 +1021,11 @@ body {font-family: Arial;}
   transition: opacity .2s;
 }
 
-.sliderTradeGreen maiz:hover {
+.sliderTradeGreenmaize:hover {
   opacity: 1;
 }
 
-.sliderTradeGreen maiz::-webkit-slider-thumb {
+.sliderTradeGreenmaize::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 25px;
@@ -1037,7 +1035,7 @@ body {font-family: Arial;}
   cursor: pointer;
 }
 
-.sliderTradeGreen maiz::-moz-range-thumb {
+.sliderTradeGreenmaize::-moz-range-thumb {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -1046,8 +1044,6 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-
-
 <div id="TradeOats" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
   <div class="slidecontainerTradeOats">
@@ -1102,8 +1098,6 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-
-
 <div id="TradePigs" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
   <div class="slidecontainerTradePigs">
@@ -1158,28 +1152,26 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-
-
-<div id="TradeSoybean" class="tabcontent">
+<div id="TradeSoybeans" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
-  <div class="slidecontainerTradeSoybean">
-    <input type="range" min="1970" max="2015" value="2000" class="sliderTradeSoybean" id="myRangeTradeSoybean">
-    <span id="mapTradeSoybean"></span>
+  <div class="slidecontainerTradeSoybeans">
+    <input type="range" min="1970" max="2015" value="2000" class="sliderTradeSoybeans" id="myRangeTradeSoybeans">
+    <span id="mapTradeSoybeans"></span>
   </div>
   <script>
-    var sliderTradeSoybean = document.getElementById("myRangeTradeSoybean");
-    var outputTradeSoybean = document.getElementById("mapTradeSoybean");
-    outputTradeSoybean.innerHTML = 'TradeSoybean in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
-    sliderTradeSoybean.oninput = function() {
-      outputTradeSoybean.innerHTML = 'TradeSoybean in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+    var sliderTradeSoybeans = document.getElementById("myRangeTradeSoybeans");
+    var outputTradeSoybeans = document.getElementById("mapTradeSoybeans");
+    outputTradeSoybeans.innerHTML = 'TradeSoybeans in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    sliderTradeSoybeans.oninput = function() {
+      outputTradeSoybeans.innerHTML = 'TradeSoybeans in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
     }
   </script>
   <style>
-.slidecontainerTradeSoybean {
+.slidecontainerTradeSoybeans {
   width: 100%;
 }
 
-.sliderTradeSoybean {
+.sliderTradeSoybeans {
   -webkit-appearance: none;
   width: 100%;
   height: 15px;
@@ -1191,11 +1183,11 @@ body {font-family: Arial;}
   transition: opacity .2s;
 }
 
-.sliderTradeSoybean:hover {
+.sliderTradeSoybeans:hover {
   opacity: 1;
 }
 
-.sliderTradeSoybean::-webkit-slider-thumb {
+.sliderTradeSoybeans::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 25px;
@@ -1205,7 +1197,7 @@ body {font-family: Arial;}
   cursor: pointer;
 }
 
-.sliderTradeSoybean::-moz-range-thumb {
+.sliderTradeSoybeans::-moz-range-thumb {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -1214,7 +1206,6 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-
 <div id="TradeTomatoes" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
   <div class="slidecontainerTradeTomatoes">
@@ -1269,7 +1260,6 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-
 <div id="TradeTurkeys" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
   <div class="slidecontainerTradeTurkeys">
@@ -1324,7 +1314,6 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-
 <div id="TradeWheat" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
   <div class="slidecontainerTradeWheat">
@@ -1399,6 +1388,8 @@ function openCity(evt, cityName) {
 document.getElementById("defaultOpen").click();
 </script>  
 </div>
+
+TODO **TODO**
 
 ### evtl Graph production trend 1 developed country 1 other
 
