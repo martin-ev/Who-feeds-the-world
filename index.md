@@ -1102,6 +1102,62 @@ In this part, we want to pick out a few of the identified features and look at w
 
 ### How is the self-suffiency score distributed for the selected features?
 
+</div>
+<div style="float: right; width: 100%; margin: 5% 0% 5% 0%;"> 
+  <div class="slidecontainer">
+    <input type="range" min="1970" max="2014" value="2000" class="slider" id="myRange">
+    <span id="map"></span>
+  </div>
+  <script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("map");
+    output.innerHTML = 'GDP in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/self_suf_'+slider.value.toString()+'.html" ></object>';
+    slider.oninput = function() {
+      output.innerHTML = 'GDP in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/self_suf_'+this.value.toString()+'.html" ></object>'
+    }
+  </script>
+  <style>
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+</style>
+</div>
+
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Unlike the production ranking, the self sufficiency score seems to be **pretty instable**. It is interesting to note that the countries which were by far **top producers do no stand out early on**. For instance China does not appear in the highest score until 1990. The most surprising results came from **African countries** such as South Africa, the United Republic of Tanzania, Nigeria and the Ivory Coast that constantly have a **score competing with the richest countries** which was unexpected. (***See import/export and production***). Even though the general trend tends to show that **richer countries are more independent**, there are **outliers** and the score seems to have a pretty **high variance**.
 
 ### -> Comparison with GDP??
