@@ -1100,11 +1100,10 @@ In this part, we want to pick out a few of the identified features and look at w
 
 ### evtl Graph production trend 1 developed country 1 other
 
-## Self-sufficency <a name="selfsufficency"></a>
+## Self-sufficency <a name="selfsufficiency"></a>
 
 ### How is the self-suffiency score distributed for the selected features?
 
-</div>
 <div style="float: right; width: 100%; margin: 5% 0% 5% 0%;"> 
   <div class="slidecontainer">
     <input type="range" min="1970" max="2014" value="2000" class="slider" id="myRange">
