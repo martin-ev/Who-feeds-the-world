@@ -338,12 +338,330 @@ body {font-family: Arial;}
 }
 </style>
 </div>
+<div id="ProdOats" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
+  <div class="slidecontainerProdOats">
+    <input type="range" min="1970" max="2015" value="2000" class="sliderProdOats" id="myRangeProdOats">
+    <span id="mapProdOats"></span>
+  </div>
+  <script>
+    var sliderProdOats = document.getElementById("myRangeProdOats");
+    var outputProdOats = document.getElementById("mapProdOats");
+    outputProdOats.innerHTML = 'ProdOats in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    sliderProdOats.oninput = function() {
+      outputProdOats.innerHTML = 'ProdOats in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+    }
+  </script>
+  <style>
+.slidecontainerProdOats {
+  width: 100%;
+}
 
+.sliderProdOats {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
 
+.sliderProdOats:hover {
+  opacity: 1;
+}
 
+.sliderProdOats::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
 
+.sliderProdOats::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+</style>
+</div>
+<div id="ProdPigs" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
+  <div class="slidecontainerProdPigs">
+    <input type="range" min="1970" max="2015" value="2000" class="sliderProdPigs" id="myRangeProdPigs">
+    <span id="mapProdPigs"></span>
+  </div>
+  <script>
+    var sliderProdPigs = document.getElementById("myRangeProdPigs");
+    var outputProdPigs = document.getElementById("mapProdPigs");
+    outputProdPigs.innerHTML = 'ProdPigs in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    sliderProdPigs.oninput = function() {
+      outputProdPigs.innerHTML = 'ProdPigs in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+    }
+  </script>
+  <style>
+.slidecontainerProdPigs {
+  width: 100%;
+}
 
+.sliderProdPigs {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
 
+.sliderProdPigs:hover {
+  opacity: 1;
+}
+
+.sliderProdPigs::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.sliderProdPigs::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+</style>
+</div>
+<div id="ProdSoybeans" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
+  <div class="slidecontainerProdSoybeans">
+    <input type="range" min="1970" max="2015" value="2000" class="sliderProdSoybeans" id="myRangeProdSoybeans">
+    <span id="mapProdSoybeans"></span>
+  </div>
+  <script>
+    var sliderProdSoybeans = document.getElementById("myRangeProdSoybeans");
+    var outputProdSoybeans = document.getElementById("mapProdSoybeans");
+    outputProdSoybeans.innerHTML = 'ProdSoybeans in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    sliderProdSoybeans.oninput = function() {
+      outputProdSoybeans.innerHTML = 'ProdSoybeans in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+    }
+  </script>
+  <style>
+.slidecontainerProdSoybeans {
+  width: 100%;
+}
+
+.sliderProdSoybeans {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.sliderProdSoybeans:hover {
+  opacity: 1;
+}
+
+.sliderProdSoybeans::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.sliderProdSoybeans::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+</style>
+</div>
+<div id="ProdTomatoes" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
+  <div class="slidecontainerProdTomatoes">
+    <input type="range" min="1970" max="2015" value="2000" class="sliderProdTomatoes" id="myRangeProdTomatoes">
+    <span id="mapProdTomatoes"></span>
+  </div>
+  <script>
+    var sliderProdTomatoes = document.getElementById("myRangeProdTomatoes");
+    var outputProdTomatoes = document.getElementById("mapProdTomatoes");
+    outputProdTomatoes.innerHTML = 'ProdTomatoes in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    sliderProdTomatoes.oninput = function() {
+      outputProdTomatoes.innerHTML = 'ProdTomatoes in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+    }
+  </script>
+  <style>
+.slidecontainerProdTomatoes {
+  width: 100%;
+}
+
+.sliderProdTomatoes {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.sliderProdTomatoes:hover {
+  opacity: 1;
+}
+
+.sliderProdTomatoes::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.sliderProdTomatoes::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+</style>
+</div>
+<div id="ProdTurkeys" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
+  <div class="slidecontainerProdTurkeys">
+    <input type="range" min="1970" max="2015" value="2000" class="sliderProdTurkeys" id="myRangeProdTurkeys">
+    <span id="mapProdTurkeys"></span>
+  </div>
+  <script>
+    var sliderProdTurkeys = document.getElementById("myRangeProdTurkeys");
+    var outputProdTurkeys = document.getElementById("mapProdTurkeys");
+    outputProdTurkeys.innerHTML = 'ProdTurkeys in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    sliderProdTurkeys.oninput = function() {
+      outputProdTurkeys.innerHTML = 'ProdTurkeys in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+    }
+  </script>
+  <style>
+.slidecontainerProdTurkeys {
+  width: 100%;
+}
+
+.sliderProdTurkeys {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.sliderProdTurkeys:hover {
+  opacity: 1;
+}
+
+.sliderProdTurkeys::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.sliderProdTurkeys::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+</style>
+</div>
+<div id="ProdWheat" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
+  <div class="slidecontainerProdWheat">
+    <input type="range" min="1970" max="2015" value="2000" class="sliderProdWheat" id="myRangeProdWheat">
+    <span id="mapProdWheat"></span>
+  </div>
+  <script>
+    var sliderProdWheat = document.getElementById("myRangeProdWheat");
+    var outputProdWheat = document.getElementById("mapProdWheat");
+    outputProdWheat.innerHTML = 'ProdWheat in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    sliderProdWheat.oninput = function() {
+      outputProdWheat.innerHTML = 'ProdWheat in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+    }
+  </script>
+  <style>
+.slidecontainerProdWheat {
+  width: 100%;
+}
+
+.sliderProdWheat {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.sliderProdWheat:hover {
+  opacity: 1;
+}
+
+.sliderProdWheat::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.sliderProdWheat::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+</style>
+</div>
 
 <script>
 function openCity(evt, cityName) {
