@@ -147,10 +147,14 @@ MAPS TOMATOES
 
 ### How is the self-suffiency score distributed for the selected features?
 
-Unlike the production ranking, the self sufficiency score seems to be **pretty instable**. It is interesting to note that the countries which were by far **top producers do no stand out early on**. For instance China does not appear in the highest score until 1990. The most surprising results came from **African countries** such as South Africa, the United Republic of Tanzania, Nigeria and the Ivory Coast that constantly have a **score competing with the richest countries** which was unexpected. (***See import/export and production***). Even though the general trend tends to show that **richer countries are more independent**, there are **outliers** and the score seems to have a pretty **high variance**.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Unlike the production ranking, the self sufficiency score seems to be **pretty instable**. It is interesting to note that the countries which were by far **top producers do no stand out early on**. For instance China does not appear in the highest score until 1990. The most surprising results came from **African countries** such as South Africa, the United Republic of Tanzania, Nigeria and the Ivory Coast that constantly have a **score competing with the richest countries** which was unexpected. (***See import/export and production***). Even though the general trend tends to show that **richer countries are more independent**, there are **outliers** and the score seems to have a pretty **high variance**.
 
 ### -> Comparison with GDP??
 
 ### Link with exporters??
 
 ## Conclusion <a name="conclusion"></a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **China, USA, Brazil**. These are the countries that feed the world. They are the bigger producers in almost all categories. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Also our analysis yields that there is a **positive correlation between the goods produced and the GDP**. More specifically we observe that the weights are greater on **goods that carry a lot of potential value** such as **green maize**. As an example we see that the US produce the most and export the most green maize. This good is essential as it is the **main good that feeds animals**. Indeed green maize feeds animals and thus is part of a bigger economy. It is thus not surprising to see that the US owns one of the biggest GDP in the world too. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In conclusion we observe a **strong correlation between wealth and production**. There is probably also a **mutual causality** between the two observations, meaning that the more you produce the wealthier you are and the wealthier you are then the more you can produce.
