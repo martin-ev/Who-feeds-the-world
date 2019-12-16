@@ -671,7 +671,7 @@ function openCityProd(evt, cityNameProd) {
     tabcontentProd[iProd].style.display = "none";
   }
   tablinksProd = document.getElementsByClassName("tablinksProd");
-  for (iProd = 0; iProd < tablinksProd.length; i++) {
+  for (iProd = 0; iProd < tablinksProd.length; iProd++) {
     tablinksProd[iProd].className = tablinksProd[iProd].className.replace(" active", "");
   }
   document.getElementById(cityNameProd).style.display = "block";
