@@ -125,11 +125,13 @@ In this part, we want to pick out a few of the identified features and look at w
 
 ### What is green maize?
 
-SLIDESHOW GREEN MAIZE
+<div style="float: right; width: 45%; margin: 5% 5% 5% 5%;" w3-include-html="plots/greenmaize.html"></div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The feature that our model puts out as the highest weighed for predicting GDP is **green maize**. What is it? It’s maize that is mainly harvested so it can be either directly **fed to animals** or conserved through “silage” and fed to them in winter. Maize is native to **central America** and thanks to genetic selection and hybridization it can now be grown **everywhere in the world**. Among the forage foods that are grown for animal feed, they’re very **high energy and easy maintenance**, since they only need to be harvested once. They also require high fertilizer, herbicide and pesticide levels. Especially with the commercial adoption of genetically modified maize that is herbicide and pest resistant during the 90s, it has emerged as a very important animal feed.
 
-### Which countries are net exporters of green maize??
+<div style="clear: right; width: 100%;"></div>
+
+### Which countries are net exporters of green maize?
 
 MAPS GREEN MAIZE
 
