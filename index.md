@@ -1,4 +1,4 @@
-## Introduction <a name="preface"></a>
+## Introduction <a name="intro"></a>
 
 ### What are the insights of this data story?
 
@@ -84,7 +84,9 @@
 
 <div style="clear: left; width: 100%;"></div>
 
-## Agricultural and economical features <a name="sources"></a>
+## About the dataset <a name="dataset"></a>
+
+## Most important agricultural and economical features <a name="features"></a>
 
 ### Which features are the most influential features on the Gross Domestic Product ? 
 
@@ -107,7 +109,7 @@
 - Tomatoes Food import quantities tonnes
 - Turkeys Live animals import quantities Head
 
-## Global production <a name="results"></a>
+## Global production <a name="production"></a>
 
 ### Which countries produce the features of interest?
 
@@ -1096,9 +1098,9 @@ In this part, we want to pick out a few of the identified features and look at w
 </style>
 </div>
 
-
-
 ### evtl Graph production trend 1 developed country 1 other
+
+## Self-sufficency <a name="selfsufficency"></a>
 
 ### How is the self-suffiency score distributed for the selected features?
 
