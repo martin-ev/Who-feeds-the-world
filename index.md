@@ -500,25 +500,90 @@ In this part, we want to pick out a few of the identified features and look at w
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Being a tomato importer also seems to be a **good predictor of wealth for the state**. Tomatoes are one of the most **important vegetable crops produced worldwide**, only potatoes have a higher production. Looking through the timeline, we clearly see that almost all **highly industrialized nations are continuously importing tomatoes**. Especially the United States, France and Germany are importing large quantities each year. It's not a big surprise, since tomatoes are a **popular ingredient in many modern western recipes**, but **require a climate** that is not well suited for most of the United States or Northern Europe.
 
 ### Who import and export the other features of interest ?
-<div style="float: right; width: 100%; margin: 5% 0% 5% 0%;"> 
-  <div class="slidecontainer">
-    <input type="range" min="1970" max="2015" value="2000" class="slider" id="myRange">
-    <span id="map"></span>
+
+<div style="float: right; width: 100%; margin: 5% 0% 5% 0%;">
+  <style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Style the close button */
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.topright:hover {color: red;}
+</style>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, ‘TradeCattle')" id="defaultOpen">Cattle</button>
+  <button class="tablinks" onclick="openCity(event, 'TradeMaize')">Maize</button>
+  <button class="tablinks" onclick="openCity(event, 'TradeGreen_maize')">Green_maize</button>
+  <button class="tablinks" onclick="openCity(event, 'TradeOats')">Oats</button>
+  <button class="tablinks" onclick="openCity(event, 'TradePigs')">Pigs</button>
+  <button class="tablinks" onclick="openCity(event, 'TradeSoybeans')">Soybeans</button>
+  <button class="tablinks" onclick="openCity(event, 'TradeTomatoes')">Tomatoes</button>
+  <button class="tablinks" onclick="openCity(event, 'TradeTurkeys')">Turkeys</button>
+  <button class="tablinks" onclick="openCity(event, 'TradeWheat')">Wheat</button>
+</div>
+
+<div id="TradeCattle" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
+  <div class="slidecontainerTradeCattle">
+    <input type="range" min="1970" max="2015" value="2000" class="sliderTradeCattle" id="myRangeTradeCattle">
+    <span id="mapTradeCattle"></span>
   </div>
   <script>
-    var slider = document.getElementById("myRange");
-    var output = document.getElementById("map");
-    output.innerHTML = 'GDP in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
-    slider.oninput = function() {
-      output.innerHTML = 'GDP in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+    var sliderTradeCattle = document.getElementById("myRangeTradeCattle");
+    var outputTradeCattle = document.getElementById("mapTradeCattle");
+    outputTradeCattle.innerHTML = 'TradeCattle in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    sliderTradeCattle.oninput = function() {
+      outputTradeCattle.innerHTML = 'TradeCattle in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
     }
   </script>
   <style>
-.slidecontainer {
+.slidecontainerTradeCattle {
   width: 100%;
 }
 
-.slider {
+.sliderTradeCattle {
   -webkit-appearance: none;
   width: 100%;
   height: 15px;
@@ -530,11 +595,11 @@ In this part, we want to pick out a few of the identified features and look at w
   transition: opacity .2s;
 }
 
-.slider:hover {
+.sliderTradeCattle:hover {
   opacity: 1;
 }
 
-.slider::-webkit-slider-thumb {
+.sliderTradeCattle::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 25px;
@@ -544,7 +609,7 @@ In this part, we want to pick out a few of the identified features and look at w
   cursor: pointer;
 }
 
-.slider::-moz-range-thumb {
+.sliderTradeCattle::-moz-range-thumb {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -553,25 +618,27 @@ In this part, we want to pick out a few of the identified features and look at w
 }
 </style>
 </div>
-<div style="float: right; width: 100%; margin: 5% 0% 5% 0%;"> 
-  <div class="slidecontainer">
-    <input type="range" min="1970" max="2015" value="2000" class="slider" id="myRange">
-    <span id="map"></span>
+
+<div id="TradeMaize" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
+  <div class="slidecontainerTradeMaize">
+    <input type="range" min="1970" max="2015" value="2000" class="sliderTradeMaize" id="myRangeTradeMaize">
+    <span id="mapTradeMaize"></span>
   </div>
   <script>
-    var slider = document.getElementById("myRange");
-    var output = document.getElementById("map");
-    output.innerHTML = 'GDP in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
-    slider.oninput = function() {
-      output.innerHTML = 'GDP in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+    var sliderTradeMaize = document.getElementById("myRangeTradeMaize");
+    var outputTradeMaize = document.getElementById("mapTradeMaize");
+    outputTradeMaize.innerHTML = 'TradeMaize in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    sliderTradeMaize.oninput = function() {
+      outputTradeMaize.innerHTML = 'TradeMaize in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
     }
   </script>
   <style>
-.slidecontainer {
+.slidecontainerTradeMaize {
   width: 100%;
 }
 
-.slider {
+.sliderTradeMaize {
   -webkit-appearance: none;
   width: 100%;
   height: 15px;
@@ -583,11 +650,11 @@ In this part, we want to pick out a few of the identified features and look at w
   transition: opacity .2s;
 }
 
-.slider:hover {
+.sliderTradeMaize:hover {
   opacity: 1;
 }
 
-.slider::-webkit-slider-thumb {
+.sliderTradeMaize::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 25px;
@@ -597,7 +664,7 @@ In this part, we want to pick out a few of the identified features and look at w
   cursor: pointer;
 }
 
-.slider::-moz-range-thumb {
+.sliderTradeMaize::-moz-range-thumb {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -606,25 +673,27 @@ In this part, we want to pick out a few of the identified features and look at w
 }
 </style>
 </div>
-<div style="float: right; width: 100%; margin: 5% 0% 5% 0%;"> 
-  <div class="slidecontainer">
-    <input type="range" min="1970" max="2015" value="2000" class="slider" id="myRange">
-    <span id="map"></span>
+
+<div id="TradeGreen maiz" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
+  <div class="slidecontainerTradeGreen maiz">
+    <input type="range" min="1970" max="2015" value="2000" class="sliderTradeGreen maiz" id="myRangeTradeGreen maiz">
+    <span id="mapTradeGreen maiz"></span>
   </div>
   <script>
-    var slider = document.getElementById("myRange");
-    var output = document.getElementById("map");
-    output.innerHTML = 'GDP in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
-    slider.oninput = function() {
-      output.innerHTML = 'GDP in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+    var sliderTradeGreen maiz = document.getElementById("myRangeTradeGreen maiz");
+    var outputTradeGreen maiz = document.getElementById("mapTradeGreen maiz");
+    outputTradeGreen maiz.innerHTML = 'TradeGreen maiz in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    sliderTradeGreen maiz.oninput = function() {
+      outputTradeGreen maiz.innerHTML = 'TradeGreen maiz in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
     }
   </script>
   <style>
-.slidecontainer {
+.slidecontainerTradeGreen maiz {
   width: 100%;
 }
 
-.slider {
+.sliderTradeGreen maiz {
   -webkit-appearance: none;
   width: 100%;
   height: 15px;
@@ -636,11 +705,11 @@ In this part, we want to pick out a few of the identified features and look at w
   transition: opacity .2s;
 }
 
-.slider:hover {
+.sliderTradeGreen maiz:hover {
   opacity: 1;
 }
 
-.slider::-webkit-slider-thumb {
+.sliderTradeGreen maiz::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 25px;
@@ -650,7 +719,7 @@ In this part, we want to pick out a few of the identified features and look at w
   cursor: pointer;
 }
 
-.slider::-moz-range-thumb {
+.sliderTradeGreen maiz::-moz-range-thumb {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -659,25 +728,28 @@ In this part, we want to pick out a few of the identified features and look at w
 }
 </style>
 </div>
-<div style="float: right; width: 100%; margin: 5% 0% 5% 0%;"> 
-  <div class="slidecontainer">
-    <input type="range" min="1970" max="2015" value="2000" class="slider" id="myRange">
-    <span id="map"></span>
+
+
+<div id="TradeOats" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
+  <div class="slidecontainerTradeOats">
+    <input type="range" min="1970" max="2015" value="2000" class="sliderTradeOats" id="myRangeTradeOats">
+    <span id="mapTradeOats"></span>
   </div>
   <script>
-    var slider = document.getElementById("myRange");
-    var output = document.getElementById("map");
-    output.innerHTML = 'GDP in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
-    slider.oninput = function() {
-      output.innerHTML = 'GDP in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+    var sliderTradeOats = document.getElementById("myRangeTradeOats");
+    var outputTradeOats = document.getElementById("mapTradeOats");
+    outputTradeOats.innerHTML = 'TradeOats in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    sliderTradeOats.oninput = function() {
+      outputTradeOats.innerHTML = 'TradeOats in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
     }
   </script>
   <style>
-.slidecontainer {
+.slidecontainerTradeOats {
   width: 100%;
 }
 
-.slider {
+.sliderTradeOats {
   -webkit-appearance: none;
   width: 100%;
   height: 15px;
@@ -689,11 +761,11 @@ In this part, we want to pick out a few of the identified features and look at w
   transition: opacity .2s;
 }
 
-.slider:hover {
+.sliderTradeOats:hover {
   opacity: 1;
 }
 
-.slider::-webkit-slider-thumb {
+.sliderTradeOats::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 25px;
@@ -703,7 +775,7 @@ In this part, we want to pick out a few of the identified features and look at w
   cursor: pointer;
 }
 
-.slider::-moz-range-thumb {
+.sliderTradeOats::-moz-range-thumb {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -712,25 +784,28 @@ In this part, we want to pick out a few of the identified features and look at w
 }
 </style>
 </div>
-<div style="float: right; width: 100%; margin: 5% 0% 5% 0%;"> 
-  <div class="slidecontainer">
-    <input type="range" min="1970" max="2015" value="2000" class="slider" id="myRange">
-    <span id="map"></span>
+
+
+<div id="TradePigs" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
+  <div class="slidecontainerTradePigs">
+    <input type="range" min="1970" max="2015" value="2000" class="sliderTradePigs" id="myRangeTradePigs">
+    <span id="mapTradePigs"></span>
   </div>
   <script>
-    var slider = document.getElementById("myRange");
-    var output = document.getElementById("map");
-    output.innerHTML = 'GDP in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
-    slider.oninput = function() {
-      output.innerHTML = 'GDP in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+    var sliderTradePigs = document.getElementById("myRangeTradePigs");
+    var outputTradePigs = document.getElementById("mapTradePigs");
+    outputTradePigs.innerHTML = 'TradePigs in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    sliderTradePigs.oninput = function() {
+      outputTradePigs.innerHTML = 'TradePigs in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
     }
   </script>
   <style>
-.slidecontainer {
+.slidecontainerTradePigs {
   width: 100%;
 }
 
-.slider {
+.sliderTradePigs {
   -webkit-appearance: none;
   width: 100%;
   height: 15px;
@@ -742,11 +817,11 @@ In this part, we want to pick out a few of the identified features and look at w
   transition: opacity .2s;
 }
 
-.slider:hover {
+.sliderTradePigs:hover {
   opacity: 1;
 }
 
-.slider::-webkit-slider-thumb {
+.sliderTradePigs::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 25px;
@@ -756,7 +831,7 @@ In this part, we want to pick out a few of the identified features and look at w
   cursor: pointer;
 }
 
-.slider::-moz-range-thumb {
+.sliderTradePigs::-moz-range-thumb {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -765,25 +840,28 @@ In this part, we want to pick out a few of the identified features and look at w
 }
 </style>
 </div>
-<div style="float: right; width: 100%; margin: 5% 0% 5% 0%;"> 
-  <div class="slidecontainer">
-    <input type="range" min="1970" max="2015" value="2000" class="slider" id="myRange">
-    <span id="map"></span>
+
+
+<div id="TradeSoybean" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
+  <div class="slidecontainerTradeSoybean">
+    <input type="range" min="1970" max="2015" value="2000" class="sliderTradeSoybean" id="myRangeTradeSoybean">
+    <span id="mapTradeSoybean"></span>
   </div>
   <script>
-    var slider = document.getElementById("myRange");
-    var output = document.getElementById("map");
-    output.innerHTML = 'GDP in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
-    slider.oninput = function() {
-      output.innerHTML = 'GDP in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+    var sliderTradeSoybean = document.getElementById("myRangeTradeSoybean");
+    var outputTradeSoybean = document.getElementById("mapTradeSoybean");
+    outputTradeSoybean.innerHTML = 'TradeSoybean in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    sliderTradeSoybean.oninput = function() {
+      outputTradeSoybean.innerHTML = 'TradeSoybean in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
     }
   </script>
   <style>
-.slidecontainer {
+.slidecontainerTradeSoybean {
   width: 100%;
 }
 
-.slider {
+.sliderTradeSoybean {
   -webkit-appearance: none;
   width: 100%;
   height: 15px;
@@ -795,11 +873,11 @@ In this part, we want to pick out a few of the identified features and look at w
   transition: opacity .2s;
 }
 
-.slider:hover {
+.sliderTradeSoybean:hover {
   opacity: 1;
 }
 
-.slider::-webkit-slider-thumb {
+.sliderTradeSoybean::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 25px;
@@ -809,7 +887,7 @@ In this part, we want to pick out a few of the identified features and look at w
   cursor: pointer;
 }
 
-.slider::-moz-range-thumb {
+.sliderTradeSoybean::-moz-range-thumb {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -818,25 +896,27 @@ In this part, we want to pick out a few of the identified features and look at w
 }
 </style>
 </div>
-<div style="float: right; width: 100%; margin: 5% 0% 5% 0%;"> 
-  <div class="slidecontainer">
-    <input type="range" min="1970" max="2015" value="2000" class="slider" id="myRange">
-    <span id="map"></span>
+
+<div id="TradeTomatoes" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
+  <div class="slidecontainerTradeTomatoes">
+    <input type="range" min="1970" max="2015" value="2000" class="sliderTradeTomatoes" id="myRangeTradeTomatoes">
+    <span id="mapTradeTomatoes"></span>
   </div>
   <script>
-    var slider = document.getElementById("myRange");
-    var output = document.getElementById("map");
-    output.innerHTML = 'GDP in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
-    slider.oninput = function() {
-      output.innerHTML = 'GDP in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+    var sliderTradeTomatoes = document.getElementById("myRangeTradeTomatoes");
+    var outputTradeTomatoes = document.getElementById("mapTradeTomatoes");
+    outputTradeTomatoes.innerHTML = 'TradeTomatoes in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    sliderTradeTomatoes.oninput = function() {
+      outputTradeTomatoes.innerHTML = 'TradeTomatoes in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
     }
   </script>
   <style>
-.slidecontainer {
+.slidecontainerTradeTomatoes {
   width: 100%;
 }
 
-.slider {
+.sliderTradeTomatoes {
   -webkit-appearance: none;
   width: 100%;
   height: 15px;
@@ -848,11 +928,11 @@ In this part, we want to pick out a few of the identified features and look at w
   transition: opacity .2s;
 }
 
-.slider:hover {
+.sliderTradeTomatoes:hover {
   opacity: 1;
 }
 
-.slider::-webkit-slider-thumb {
+.sliderTradeTomatoes::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 25px;
@@ -862,7 +942,7 @@ In this part, we want to pick out a few of the identified features and look at w
   cursor: pointer;
 }
 
-.slider::-moz-range-thumb {
+.sliderTradeTomatoes::-moz-range-thumb {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -870,6 +950,136 @@ In this part, we want to pick out a few of the identified features and look at w
   cursor: pointer;
 }
 </style>
+</div>
+
+<div id="TradeTurkeys" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
+  <div class="slidecontainerTradeTurkeys">
+    <input type="range" min="1970" max="2015" value="2000" class="sliderTradeTurkeys" id="myRangeTradeTurkeys">
+    <span id="mapTradeTurkeys"></span>
+  </div>
+  <script>
+    var sliderTradeTurkeys = document.getElementById("myRangeTradeTurkeys");
+    var outputTradeTurkeys = document.getElementById("mapTradeTurkeys");
+    outputTradeTurkeys.innerHTML = 'TradeTurkeys in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    sliderTradeTurkeys.oninput = function() {
+      outputTradeTurkeys.innerHTML = 'TradeTurkeys in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+    }
+  </script>
+  <style>
+.slidecontainerTradeTurkeys {
+  width: 100%;
+}
+
+.sliderTradeTurkeys {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.sliderTradeTurkeys:hover {
+  opacity: 1;
+}
+
+.sliderTradeTurkeys::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.sliderTradeTurkeys::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+</style>
+</div>
+
+<div id="TradeWheat" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
+  <div class="slidecontainerTradeWheat">
+    <input type="range" min="1970" max="2015" value="2000" class="sliderTradeWheat" id="myRangeTradeWheat">
+    <span id="mapTradeWheat"></span>
+  </div>
+  <script>
+    var sliderTradeWheat = document.getElementById("myRangeTradeWheat");
+    var outputTradeWheat = document.getElementById("mapTradeWheat");
+    outputTradeWheat.innerHTML = 'TradeWheat in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    sliderTradeWheat.oninput = function() {
+      outputTradeWheat.innerHTML = 'TradeWheat in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+    }
+  </script>
+  <style>
+.slidecontainerTradeWheat {
+  width: 100%;
+}
+
+.sliderTradeWheat {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.sliderTradeWheat:hover {
+  opacity: 1;
+}
+
+.sliderTradeWheat::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.sliderTradeWheat::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+</style>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>  
 </div>
 
 ### evtl Graph production trend 1 developed country 1 other
