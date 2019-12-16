@@ -107,7 +107,7 @@
 - Tomatoes Food import quantities tonnes
 - Turkeys Live animals import quantities Head
 
-## Improve economy with agriculture <a name="results"></a>
+## Global production <a name="results"></a>
 
 ### Which countries produce the features of interest?
 
@@ -119,7 +119,7 @@ MAPS PRODUCTION
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What can be found surprising is the **stability of the producer ranking** throughout the years. The top producers 50 years ago are still the top producers nowadays. It is also worth noting that globally, even though the ranking does not change, the **sheer production volume follows a growing trend**.
 
-### Global Trade Balances <a name="balances"></a>
+## Global Trade Balances <a name="balances"></a>
 
 In this part, we want to pick out a few of the identified features and look at where in the world they are most exported from and imported to. 
 
