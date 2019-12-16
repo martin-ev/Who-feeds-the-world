@@ -118,14 +118,14 @@
 body {font-family: Arial;}
 
 /* Style the tab */
-.tab {
+.tabProd {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
 
 /* Style the buttons inside the tab */
-.tab button {
+.tabProd button {
   background-color: inherit;
   float: left;
   border: none;
@@ -137,17 +137,17 @@ body {font-family: Arial;}
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.tabProd button:hover {
   background-color: #ddd;
 }
 
 /* Create an active/current tablink class */
-.tab button.active {
+.tabProd button.active {
   background-color: #ccc;
 }
 
 /* Style the tab content */
-.tabcontent {
+.tabcontentProd {
   display: none;
   padding: 6px 12px;
   border: 1px solid #ccc;
@@ -155,29 +155,29 @@ body {font-family: Arial;}
 }
 
 /* Style the close button */
-.topright {
+.toprightProd {
   float: right;
   cursor: pointer;
   font-size: 28px;
 }
 
-.topright:hover {color: red;}
+.toprightProd:hover {color: red;}
 </style>
 
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'ProdCattle')" id="defaultOpen">Cattle</button>
-  <button class="tablinks" onclick="openCity(event, 'ProdMaize')">Maize</button>
-  <button class="tablinks" onclick="openCity(event, 'ProdGreenmaize')">Green maize</button>
-  <button class="tablinks" onclick="openCity(event, 'ProdOats')">Oats</button>
-  <button class="tablinks" onclick="openCity(event, 'ProdPigs')">Pigs</button>
-  <button class="tablinks" onclick="openCity(event, 'ProdSoybeans')">Soybeans</button>
-  <button class="tablinks" onclick="openCity(event, 'ProdTomatoes')">Tomatoes</button>
-  <button class="tablinks" onclick="openCity(event, 'ProdTurkeys')">Turkeys</button>
-  <button class="tablinks" onclick="openCity(event, 'ProdWheat')">Wheat</button>
+<div class="tabProd">
+  <button class="tablinksProd" onclick="openCityProd(event, 'ProdCattle')" id="defaultOpen">Cattle</button>
+  <button class="tablinksProd" onclick="openCityProd(event, 'ProdMaize')">Maize</button>
+  <button class="tablinksProd" onclick="openCityProd(event, 'ProdGreenmaize')">Green maize</button>
+  <button class="tablinksProd" onclick="openCityProd(event, 'ProdOats')">Oats</button>
+  <button class="tablinksProd" onclick="openCityProd(event, 'ProdPigs')">Pigs</button>
+  <button class="tablinksProd" onclick="openCityProd(event, 'ProdSoybeans')">Soybeans</button>
+  <button class="tablinksProd" onclick="openCityProd(event, 'ProdTomatoes')">Tomatoes</button>
+  <button class="tablinksProd" onclick="openCityProd(event, 'ProdTurkeys')">Turkeys</button>
+  <button class="tablinksProd" onclick="openCityProd(event, 'ProdWheat')">Wheat</button>
 </div>
 
-<div id="ProdCattle" class="tabcontent">
-  <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
+<div id="ProdCattle" class="tabcontentProd">
+  <span onclick="this.parentElement.style.display='none'" class="toprightProd">X</span>
   <div class="slidecontainerProdCattle">
     <input type="range" min="1970" max="2015" value="2000" class="sliderProdCattle" id="myRangeProdCattle">
     <span id="mapProdCattle"></span>
@@ -230,7 +230,7 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-<div id="ProdMaize" class="tabcontent">
+<div id="ProdMaize" class="tabcontentProd">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
   <div class="slidecontainerProdMaize">
     <input type="range" min="1970" max="2015" value="2000" class="sliderProdMaize" id="myRangeProdMaize">
@@ -284,7 +284,7 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-<div id="ProdGreenmaize" class="tabcontent">
+<div id="ProdGreenmaize" class="tabcontentProd">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
   <div class="slidecontainerProdGreenmaize">
     <input type="range" min="1970" max="2015" value="2000" class="sliderProdGreenmaize" id="myRangeProdGreenmaize">
@@ -338,7 +338,7 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-<div id="ProdOats" class="tabcontent">
+<div id="ProdOats" class="tabcontentProd">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
   <div class="slidecontainerProdOats">
     <input type="range" min="1970" max="2015" value="2000" class="sliderProdOats" id="myRangeProdOats">
@@ -392,7 +392,7 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-<div id="ProdPigs" class="tabcontent">
+<div id="ProdPigs" class="tabcontentProd">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
   <div class="slidecontainerProdPigs">
     <input type="range" min="1970" max="2015" value="2000" class="sliderProdPigs" id="myRangeProdPigs">
@@ -446,7 +446,7 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-<div id="ProdSoybeans" class="tabcontent">
+<div id="ProdSoybeans" class="tabcontentProd">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
   <div class="slidecontainerProdSoybeans">
     <input type="range" min="1970" max="2015" value="2000" class="sliderProdSoybeans" id="myRangeProdSoybeans">
@@ -500,7 +500,7 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-<div id="ProdTomatoes" class="tabcontent">
+<div id="ProdTomatoes" class="tabcontentProd">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
   <div class="slidecontainerProdTomatoes">
     <input type="range" min="1970" max="2015" value="2000" class="sliderProdTomatoes" id="myRangeProdTomatoes">
@@ -554,7 +554,7 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-<div id="ProdTurkeys" class="tabcontent">
+<div id="ProdTurkeys" class="tabcontentProd">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
   <div class="slidecontainerProdTurkeys">
     <input type="range" min="1970" max="2015" value="2000" class="sliderProdTurkeys" id="myRangeProdTurkeys">
@@ -608,7 +608,7 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-<div id="ProdWheat" class="tabcontent">
+<div id="ProdWheat" class="tabcontentProd">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
   <div class="slidecontainerProdWheat">
     <input type="range" min="1970" max="2015" value="2000" class="sliderProdWheat" id="myRangeProdWheat">
@@ -664,22 +664,22 @@ body {font-family: Arial;}
 </div>
 
 <script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+function openCityProd(evt, cityNameProd) {
+  var iProd, tabcontentProd, tablinksProd;
+  tabcontentProd = document.getElementsByClassName("tabcontentProd");
+  for (iProd = 0; iProd < tabcontentProd.length; iProd++) {
+    tabcontentProd[iProd].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  tablinksProd = document.getElementsByClassName("tablinksProd");
+  for (iProd = 0; iProd < tablinksProd.length; i++) {
+    tablinksProd[iProd].className = tablinksProd[iProd].className.replace(" active", "");
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(cityNameProd).style.display = "block";
   evt.currentTarget.className += " active";
 }
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+// Get the element with id="defaultOpenProd" and click on it
+document.getElementById("defaultOpenProd").click();
 </script>  
 </div>
 
