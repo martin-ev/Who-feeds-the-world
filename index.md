@@ -167,7 +167,7 @@ body {font-family: Arial;}
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'ProdCattle')" id="defaultOpen">Cattle</button>
   <button class="tablinks" onclick="openCity(event, 'ProdMaize')">Maize</button>
-  <button class="tablinks" onclick="openCity(event, 'ProdGreen maize')">Green maize</button>
+  <button class="tablinks" onclick="openCity(event, 'ProdGreenmaize')">Green maize</button>
   <button class="tablinks" onclick="openCity(event, 'ProdOats')">Oats</button>
   <button class="tablinks" onclick="openCity(event, 'ProdPigs')">Pigs</button>
   <button class="tablinks" onclick="openCity(event, 'ProdSoybeans')">Soybeans</button>
@@ -284,26 +284,26 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-<div id="ProdGreen maize" class="tabcontent">
+<div id="ProdGreenmaize" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
-  <div class="slidecontainerProdGreen maize">
-    <input type="range" min="1970" max="2015" value="2000" class="sliderProdGreen maize" id="myRangeProdGreen maize">
-    <span id="mapProdGreen maize"></span>
+  <div class="slidecontainerProdGreenmaize">
+    <input type="range" min="1970" max="2015" value="2000" class="sliderProdGreenmaize" id="myRangeProdGreenmaize">
+    <span id="mapProdGreenmaize"></span>
   </div>
   <script>
-    var sliderProdGreen maize = document.getElementById("myRangeProdGreen maize");
-    var outputProdGreen maize = document.getElementById("mapProdGreen maize");
-    outputProdGreen maize.innerHTML = 'ProdGreen maize in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
-    sliderProdGreen maize.oninput = function() {
-      outputProdGreen maize.innerHTML = 'ProdGreen maize in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+    var sliderProdGreenmaize = document.getElementById("myRangeProdGreenmaize");
+    var outputProdGreenmaize = document.getElementById("mapProdGreenmaize");
+    outputProdGreenmaize.innerHTML = 'ProdGreenmaize in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    sliderProdGreenmaize.oninput = function() {
+      outputProdGreenmaize.innerHTML = 'ProdGreenmaize in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
     }
   </script>
   <style>
-.slidecontainerProdGreen maize {
+.slidecontainerProdGreenmaize {
   width: 100%;
 }
 
-.sliderProdGreen maize {
+.sliderProdGreenmaize {
   -webkit-appearance: none;
   width: 100%;
   height: 15px;
@@ -315,11 +315,11 @@ body {font-family: Arial;}
   transition: opacity .2s;
 }
 
-.sliderProdGreen maize:hover {
+.sliderProdGreenmaize:hover {
   opacity: 1;
 }
 
-.sliderProdGreen maize::-webkit-slider-thumb {
+.sliderProdGreenmaize::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 25px;
@@ -329,7 +329,7 @@ body {font-family: Arial;}
   cursor: pointer;
 }
 
-.sliderProdGreen maize::-moz-range-thumb {
+.sliderProdGreenmaize::-moz-range-thumb {
   width: 25px;
   height: 25px;
   border-radius: 50%;
