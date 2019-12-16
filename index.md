@@ -165,7 +165,7 @@ body {font-family: Arial;}
 </style>
 
 <div class="tabProd">
-  <button class="tablinksProd" onclick="openCityProd(event, 'ProdCattle')" id="defaultOpen">Cattle</button>
+  <button class="tablinksProd" onclick="openCityProd(event, 'ProdCattle')" id="defaultOpenProd">Cattle</button>
   <button class="tablinksProd" onclick="openCityProd(event, 'ProdMaize')">Maize</button>
   <button class="tablinksProd" onclick="openCityProd(event, 'ProdGreenmaize')">Green maize</button>
   <button class="tablinksProd" onclick="openCityProd(event, 'ProdOats')">Oats</button>
@@ -824,14 +824,14 @@ In this part, we want to pick out a few of the identified features and look at w
 body {font-family: Arial;}
 
 /* Style the tab */
-.tab {
+.tabTrade {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
 
 /* Style the buttons inside the tab */
-.tab button {
+.tabTrade button {
   background-color: inherit;
   float: left;
   border: none;
@@ -843,17 +843,17 @@ body {font-family: Arial;}
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.tabTrade button:hover {
   background-color: #ddd;
 }
 
 /* Create an active/current tablink class */
-.tab button.active {
+.tabTrade button.active {
   background-color: #ccc;
 }
 
 /* Style the tab content */
-.tabcontent {
+.tabcontentTrade {
   display: none;
   padding: 6px 12px;
   border: 1px solid #ccc;
@@ -861,29 +861,29 @@ body {font-family: Arial;}
 }
 
 /* Style the close button */
-.topright {
+.toprightTrade {
   float: right;
   cursor: pointer;
   font-size: 28px;
 }
 
-.topright:hover {color: red;}
+.toprightTrade:hover {color: red;}
 </style>
 
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'TradeCattle')" id="defaultOpen">Cattle</button>
-  <button class="tablinks" onclick="openCity(event, 'TradeMaize')">Maize</button>
-  <button class="tablinks" onclick="openCity(event, 'TradeGreenmaize')">Green maize</button>
-  <button class="tablinks" onclick="openCity(event, 'TradeOats')">Oats</button>
-  <button class="tablinks" onclick="openCity(event, 'TradePigs')">Pigs</button>
-  <button class="tablinks" onclick="openCity(event, 'TradeSoybeans')">Soybeans</button>
-  <button class="tablinks" onclick="openCity(event, 'TradeTomatoes')">Tomatoes</button>
-  <button class="tablinks" onclick="openCity(event, 'TradeTurkeys')">Turkeys</button>
-  <button class="tablinks" onclick="openCity(event, 'TradeWheat')">Wheat</button>
+<div class="tabTrade">
+  <button class="tablinksTrade" onclick="openCityTrade(event, 'TradeCattle')" id="defaultOpenTrade">Cattle</button>
+  <button class="tablinksTrade" onclick="openCityTrade(event, 'TradeMaize')">Maize</button>
+  <button class="tablinksTrade" onclick="openCityTrade(event, 'TradeGreenmaize')">Green maize</button>
+  <button class="tablinksTrade" onclick="openCityTrade(event, 'TradeOats')">Oats</button>
+  <button class="tablinksTrade" onclick="openCityTrade(event, 'TradePigs')">Pigs</button>
+  <button class="tablinksTrade" onclick="openCityTrade(event, 'TradeSoybeans')">Soybeans</button>
+  <button class="tablinksTrade" onclick="openCityTrade(event, 'TradeTomatoes')">Tomatoes</button>
+  <button class="tablinksTrade" onclick="openCityTrade(event, 'TradeTurkeys')">Turkeys</button>
+  <button class="tablinksTrade" onclick="openCityTrade(event, 'TradeWheat')">Wheat</button>
 </div>
 
-<div id="TradeCattle" class="tabcontent">
-  <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
+<div id="TradeCattle" class="tabcontentTrade">
+  <span onclick="this.parentElement.style.display='none'" class="toprightTrade">X</span>
   <div class="slidecontainerTradeCattle">
     <input type="range" min="1970" max="2015" value="2000" class="sliderTradeCattle" id="myRangeTradeCattle">
     <span id="mapTradeCattle"></span>
@@ -936,7 +936,7 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-<div id="TradeMaize" class="tabcontent">
+<div id="TradeMaize" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
   <div class="slidecontainerTradeMaize">
     <input type="range" min="1970" max="2015" value="2000" class="sliderTradeMaize" id="myRangeTradeMaize">
@@ -990,7 +990,7 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-<div id="TradeGreenmaize" class="tabcontent">
+<div id="TradeGreenmaize" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
   <div class="slidecontainerTradeGreenmaize">
     <input type="range" min="1970" max="2015" value="2000" class="sliderTradeGreenmaize" id="myRangeTradeGreenmaize">
@@ -1044,7 +1044,7 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-<div id="TradeOats" class="tabcontent">
+<div id="TradeOats" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
   <div class="slidecontainerTradeOats">
     <input type="range" min="1970" max="2015" value="2000" class="sliderTradeOats" id="myRangeTradeOats">
@@ -1098,7 +1098,7 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-<div id="TradePigs" class="tabcontent">
+<div id="TradePigs" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
   <div class="slidecontainerTradePigs">
     <input type="range" min="1970" max="2015" value="2000" class="sliderTradePigs" id="myRangeTradePigs">
@@ -1152,7 +1152,7 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-<div id="TradeSoybeans" class="tabcontent">
+<div id="TradeSoybeans" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
   <div class="slidecontainerTradeSoybeans">
     <input type="range" min="1970" max="2015" value="2000" class="sliderTradeSoybeans" id="myRangeTradeSoybeans">
@@ -1206,7 +1206,7 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-<div id="TradeTomatoes" class="tabcontent">
+<div id="TradeTomatoes" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
   <div class="slidecontainerTradeTomatoes">
     <input type="range" min="1970" max="2015" value="2000" class="sliderTradeTomatoes" id="myRangeTradeTomatoes">
@@ -1260,7 +1260,7 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-<div id="TradeTurkeys" class="tabcontent">
+<div id="TradeTurkeys" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
   <div class="slidecontainerTradeTurkeys">
     <input type="range" min="1970" max="2015" value="2000" class="sliderTradeTurkeys" id="myRangeTradeTurkeys">
@@ -1314,7 +1314,7 @@ body {font-family: Arial;}
 }
 </style>
 </div>
-<div id="TradeWheat" class="tabcontent">
+<div id="TradeWheat" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
   <div class="slidecontainerTradeWheat">
     <input type="range" min="1970" max="2015" value="2000" class="sliderTradeWheat" id="myRangeTradeWheat">
@@ -1370,22 +1370,22 @@ body {font-family: Arial;}
 </div>
 
 <script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+function openCityTrade(evt, cityNameTrade) {
+  var iTrade, tabcontentTrade, tablinksTrade;
+  tabcontentTrade = document.getElementsByClassName("tabcontentTrade");
+  for (iTrade = 0; iTrade < tabcontentTrade.length; iTrade++) {
+    tabcontentTrade[iTrade].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  tablinksTrade = document.getElementsByClassName("tablinksTrade");
+  for (iTrade = 0; iTrade < tablinksTrade.length; iTrade++) {
+    tablinksTrade[iTrade].className = tablinksTrade[iTrade].className.replace(" active", "");
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(cityNameTrade).style.display = "block";
   evt.currentTarget.className += " active";
 }
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+// Get the element with id="defaultOpenTrade" and click on it
+document.getElementById("defaultOpenTrade").click();
 </script>  
 </div>
 
