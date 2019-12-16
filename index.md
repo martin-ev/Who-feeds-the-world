@@ -1105,24 +1105,24 @@ In this part, we want to pick out a few of the identified features and look at w
 ### How is the self-suffiency score distributed for the selected features?
 
 <div style="float: right; width: 100%; margin: 5% 0% 5% 0%;"> 
-  <div class="slidecontainer">
-    <input type="range" min="1970" max="2014" value="2000" class="slider" id="myRange">
-    <span id="map"></span>
+  <div class="slidecontainerSelfSuffiency">
+    <input type="range" min="1970" max="2014" value="2000" class="sliderSelfSuffiency" id="myRangeSelfSuffiency">
+    <span id="mapSelfSuffiency"></span>
   </div>
   <script>
-    var slider = document.getElementById("myRange");
-    var output = document.getElementById("map");
-    output.innerHTML = 'GDP in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/self_suf_'+slider.value.toString()+'.html" ></object>';
-    slider.oninput = function() {
-      output.innerHTML = 'GDP in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/self_suf_'+this.value.toString()+'.html" ></object>'
+    var sliderSelfSuffiency = document.getElementById("myRangeSelfSuffiency");
+    var outputSelfSuffiency = document.getElementById("mapSelfSuffiency");
+    outputSelfSuffiency.innerHTML = 'Self-sufficiency in the world in '+sliderSelfSuffiency.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/self_suf_'+sliderSelfSuffiency.value.toString()+'.html" ></object>';
+    sliderSelfSuffiency.oninput = function() {
+      outputSelfSuffiency.innerHTML = 'Self-sufficiency in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/self_suf_'+this.value.toString()+'.html" ></object>'
     }
   </script>
   <style>
-.slidecontainer {
+.slidecontainerSelfSuffiency {
   width: 100%;
 }
 
-.slider {
+.sliderSelfSuffiency {
   -webkit-appearance: none;
   width: 100%;
   height: 15px;
@@ -1134,11 +1134,11 @@ In this part, we want to pick out a few of the identified features and look at w
   transition: opacity .2s;
 }
 
-.slider:hover {
+.sliderSelfSuffiency:hover {
   opacity: 1;
 }
 
-.slider::-webkit-slider-thumb {
+.sliderSelfSuffiency::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 25px;
@@ -1148,7 +1148,7 @@ In this part, we want to pick out a few of the identified features and look at w
   cursor: pointer;
 }
 
-.slider::-moz-range-thumb {
+.sliderSelfSuffiency::-moz-range-thumb {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -1168,5 +1168,7 @@ In this part, we want to pick out a few of the identified features and look at w
 ## Conclusion <a name="conclusion"></a>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **China, USA, Brazil**. These are the countries that feed the world. They are the bigger producers in almost all categories. 
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Also our analysis yields that there is a **positive correlation between the goods produced and the GDP**. More specifically we observe that the weights are greater on **goods that carry a lot of potential value** such as **green maize**. As an example we see that the US produce the most and export the most green maize. This good is essential as it is the **main good that feeds animals**. Indeed green maize feeds animals and thus is part of a bigger economy. It is thus not surprising to see that the US owns one of the biggest GDP in the world too. 
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In conclusion we observe a **strong correlation between wealth and production**. There is probably also a **mutual causality** between the two observations, meaning that the more you produce the wealthier you are and the wealthier you are then the more you can produce.
