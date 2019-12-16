@@ -164,35 +164,38 @@ body {font-family: Arial;}
 .topright:hover {color: red;}
 </style>
 
-<h2>Tabs</h2>
-<p>Click on the x button in the top right corner to close the current tab:</p>
-
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+  <button class="tablinks" onclick="openCity(event, 'ProdCattle')" id="defaultOpen">Cattle</button>
+  <button class="tablinks" onclick="openCity(event, 'ProdMaize')">Maize</button>
+  <button class="tablinks" onclick="openCity(event, 'ProdGreen maize')">Green maize</button>
+  <button class="tablinks" onclick="openCity(event, 'ProdOats')">Oats</button>
+  <button class="tablinks" onclick="openCity(event, 'ProdPigs')">Pigs</button>
+  <button class="tablinks" onclick="openCity(event, 'ProdSoybeans')">Soybeans</button>
+  <button class="tablinks" onclick="openCity(event, 'ProdTomatoes')">Tomatoes</button>
+  <button class="tablinks" onclick="openCity(event, 'ProdTurkeys')">Turkeys</button>
+  <button class="tablinks" onclick="openCity(event, 'ProdWheat')">Wheat</button>
 </div>
 
-<div id="London" class="tabcontent">
-  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <div class="slidecontainer">
-    <input type="range" min="1970" max="2015" value="2000" class="slider" id="myRange">
-    <span id="map"></span>
+<div id="ProdCattle" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">X</span>
+  <div class="slidecontainerProdCattle">
+    <input type="range" min="1970" max="2015" value="2000" class="sliderProdCattle" id="myRangeProdCattle">
+    <span id="mapProdCattle"></span>
   </div>
   <script>
-    var slider = document.getElementById("myRange");
-    var output = document.getElementById("map");
-    output.innerHTML = 'GDP in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
-    slider.oninput = function() {
-      output.innerHTML = 'GDP in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+    var sliderProdCattle = document.getElementById("myRangeProdCattle");
+    var outputProdCattle = document.getElementById("mapProdCattle");
+    outputProdCattle.innerHTML = 'ProdCattle in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    sliderProdCattle.oninput = function() {
+      outputProdCattle.innerHTML = 'ProdCattle in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
     }
   </script>
   <style>
-.slidecontainer {
+.slidecontainerProdCattle {
   width: 100%;
 }
 
-.slider {
+.sliderProdCattle {
   -webkit-appearance: none;
   width: 100%;
   height: 15px;
@@ -204,11 +207,11 @@ body {font-family: Arial;}
   transition: opacity .2s;
 }
 
-.slider:hover {
+.sliderProdCattle:hover {
   opacity: 1;
 }
 
-.slider::-webkit-slider-thumb {
+.sliderProdCattle::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 25px;
@@ -218,7 +221,7 @@ body {font-family: Arial;}
   cursor: pointer;
 }
 
-.slider::-moz-range-thumb {
+.sliderProdCattle::-moz-range-thumb {
   width: 25px;
   height: 25px;
   border-radius: 50%;
