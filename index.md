@@ -26,9 +26,9 @@
   <script>
     var slider = document.getElementById("myRange");
     var output = document.getElementById("map");
-    output.innerHTML = 'GDP in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 400px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    output.innerHTML = 'GDP in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
     slider.oninput = function() {
-      output.innerHTML = 'GDP in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 400px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+      output.innerHTML = 'GDP in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
     }
   </script>
   <style>
