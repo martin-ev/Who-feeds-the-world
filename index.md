@@ -754,7 +754,6 @@ In this part, we want to pick out a few of the identified features and look at w
   cursor: pointer;
 }
 </style>
-</div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  We see that in 1980 no country in the world was a strong net exporter of green maize. Starting from the mid 80s the **United States** emerge as the main net exporter. During the 90s and into recent years, some more countries emerge that are net exporters, mainly in Europe. Globally, the United States stays the most important exporter of this agricultural product throughout the years, which is probably why our model identified it as a **strong predictor of GDP**.
 
@@ -811,7 +810,6 @@ In this part, we want to pick out a few of the identified features and look at w
   cursor: pointer;
 }
 </style>
-</div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Being a tomato importer also seems to be a **good predictor of wealth for the state**. Tomatoes are one of the most **important vegetable crops produced worldwide**, only potatoes have a higher production. Looking through the timeline, we clearly see that almost all **highly industrialized nations are continuously importing tomatoes**. Especially the United States, France and Germany are importing large quantities each year. It's not a big surprise, since tomatoes are a **popular ingredient in many modern western recipes**, but **require a climate** that is not well suited for most of the United States or Northern Europe.
 
