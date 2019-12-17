@@ -833,9 +833,9 @@ body {font-family: Arial;}
   <script>
     var sliderTradeCattle = document.getElementById("myRangeTradeCattle");
     var outputTradeCattle = document.getElementById("mapTradeCattle");
-    outputTradeCattle.innerHTML = 'TradeCattle in the world in '+sliderTradeCattle.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    outputTradeCattle.innerHTML = 'Trade Balance of cattle (livestock) in the world in '+sliderTradeCattle.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Cattle Livestock Trade Balance Head_'+sliderTradeCattle.value.toString()+'.html" ></object>';
     sliderTradeCattle.oninput = function() {
-      outputTradeCattle.innerHTML = 'TradeCattle in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+      outputTradeCattle.innerHTML = 'Trade Balance of cattle (livestock) in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Cattle Livestock Trade Balance Head_'+this.value.toString()+'.html" ></object>'
     }
   </script>
   <style>
@@ -887,9 +887,9 @@ body {font-family: Arial;}
   <script>
     var sliderTradeMaize = document.getElementById("myRangeTradeMaize");
     var outputTradeMaize = document.getElementById("mapTradeMaize");
-    outputTradeMaize.innerHTML = 'TradeMaize in the world in '+sliderTradeMaize.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    outputTradeMaize.innerHTML = 'Trade Balance of maize (crops) in the world in '+sliderTradeMaize.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Maize Crops Trade Balance tonnes_'+sliderTradeMaize.value.toString()+'.html" ></object>';
     sliderTradeMaize.oninput = function() {
-      outputTradeMaize.innerHTML = 'TradeMaize in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+      outputTradeMaize.innerHTML = 'Trade Balance of maize (crops) in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Maize Crops Trade Balance tonnes_'+this.value.toString()+'.html" ></object>'
     }
   </script>
   <style>
@@ -941,9 +941,9 @@ body {font-family: Arial;}
   <script>
     var sliderTradeGreenmaize = document.getElementById("myRangeTradeGreenmaize");
     var outputTradeGreenmaize = document.getElementById("mapTradeGreenmaize");
-    outputTradeGreenmaize.innerHTML = 'TradeGreenmaize in the world in '+sliderTradeGreenmaize.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    outputTradeGreenmaize.innerHTML = 'Trade Balance of green maize (crops) in the world in '+sliderTradeGreenmaize.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Maize, green Crops Trade Balance tonnes_'+sliderTradeGreenmaize.value.toString()+'.html" ></object>';
     sliderTradeGreenmaize.oninput = function() {
-      outputTradeGreenmaize.innerHTML = 'TradeGreenmaize in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+      outputTradeGreenmaize.innerHTML = 'Trade Balance of green maize (crops) in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Maize, green Crops Trade Balance tonnes_'+this.value.toString()+'.html" ></object>'
     }
   </script>
   <style>
@@ -995,9 +995,9 @@ body {font-family: Arial;}
   <script>
     var sliderTradeOats = document.getElementById("myRangeTradeOats");
     var outputTradeOats = document.getElementById("mapTradeOats");
-    outputTradeOats.innerHTML = 'TradeOats in the world in '+sliderTradeOats.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    outputTradeOats.innerHTML = 'Trade Balance of oats (crops) in the world in '+sliderTradeOats.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Oats Crops Trade Balance tonnes_'+sliderTradeOats.value.toString()+'.html" ></object>';
     sliderTradeOats.oninput = function() {
-      outputTradeOats.innerHTML = 'TradeOats in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+      outputTradeOats.innerHTML = 'Trade Balance of oats (crops) in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Oats Crops Trade Balance tonnes_'+this.value.toString()+'.html" ></object>'
     }
   </script>
   <style>
@@ -1049,9 +1049,9 @@ body {font-family: Arial;}
   <script>
     var sliderTradePigs = document.getElementById("myRangeTradePigs");
     var outputTradePigs = document.getElementById("mapTradePigs");
-    outputTradePigs.innerHTML = 'TradePigs in the world in '+sliderTradePigs.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    outputTradePigs.innerHTML = 'Trade Balance of pigs (livestock) in the world in '+sliderTradePigs.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Pigs Livestock Trade Balance Head_'+sliderTradePigs.value.toString()+'.html" ></object>';
     sliderTradePigs.oninput = function() {
-      outputTradePigs.innerHTML = 'TradePigs in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+      outputTradePigs.innerHTML = 'Trade Balance of pigs (livestock) in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Pigs Livestock Trade Balance Head_'+this.value.toString()+'.html" ></object>'
     }
   </script>
   <style>
@@ -1103,9 +1103,9 @@ body {font-family: Arial;}
   <script>
     var sliderTradeSoybeans = document.getElementById("myRangeTradeSoybeans");
     var outputTradeSoybeans = document.getElementById("mapTradeSoybeans");
-    outputTradeSoybeans.innerHTML = 'TradeSoybeans in the world in '+sliderTradeSoybeans.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    outputTradeSoybeans.innerHTML = 'Trade Balance of soybeans (crops) in the world in '+sliderTradeSoybeans.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Soybeans Crops Trade Balance tonnes_'+sliderTradeSoybeans.value.toString()+'.html" ></object>';
     sliderTradeSoybeans.oninput = function() {
-      outputTradeSoybeans.innerHTML = 'TradeSoybeans in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+      outputTradeSoybeans.innerHTML = 'Trade Balance of soybeans (crops) in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Soybeans Crops Trade Balance tonnes_'+this.value.toString()+'.html" ></object>'
     }
   </script>
   <style>
@@ -1157,9 +1157,9 @@ body {font-family: Arial;}
   <script>
     var sliderTradeTomatoes = document.getElementById("myRangeTradeTomatoes");
     var outputTradeTomatoes = document.getElementById("mapTradeTomatoes");
-    outputTradeTomatoes.innerHTML = 'TradeTomatoes in the world in '+sliderTradeTomatoes.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    outputTradeTomatoes.innerHTML = 'Trade Balance of tomatoes (crops) in the world in '+sliderTradeTomatoes.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Tomatoes Crops Trade Balance tonnes_'+sliderTradeTomatoes.value.toString()+'.html" ></object>';
     sliderTradeTomatoes.oninput = function() {
-      outputTradeTomatoes.innerHTML = 'TradeTomatoes in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+      outputTradeTomatoes.innerHTML = 'Trade Balance of tomatoes (crops) in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Tomatoes Crops Trade Balance tonnes_'+this.value.toString()+'.html" ></object>'
     }
   </script>
   <style>
@@ -1211,9 +1211,9 @@ body {font-family: Arial;}
   <script>
     var sliderTradeTurkeys = document.getElementById("myRangeTradeTurkeys");
     var outputTradeTurkeys = document.getElementById("mapTradeTurkeys");
-    outputTradeTurkeys.innerHTML = 'TradeTurkeys in the world in '+sliderTradeTurkeys.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    outputTradeTurkeys.innerHTML = 'Trade Balance of turkeys (livestock) in the world in '+sliderTradeTurkeys.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Turkeys Livestock Trade Balance Head_'+sliderTradeTurkeys.value.toString()+'.html" ></object>';
     sliderTradeTurkeys.oninput = function() {
-      outputTradeTurkeys.innerHTML = 'TradeTurkeys in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+      outputTradeTurkeys.innerHTML = 'Trade Balance of turkeys (livestock) in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Turkeys Livestock Trade Balance Head_'+this.value.toString()+'.html" ></object>'
     }
   </script>
   <style>
@@ -1265,9 +1265,9 @@ body {font-family: Arial;}
   <script>
     var sliderTradeWheat = document.getElementById("myRangeTradeWheat");
     var outputTradeWheat = document.getElementById("mapTradeWheat");
-    outputTradeWheat.innerHTML = 'TradeWheat in the world in '+sliderTradeWheat.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    outputTradeWheat.innerHTML = 'Trade Balance of wheat (crops) in the world in '+sliderTradeWheat.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Wheat Crops Trade Balance tonnes_'+sliderTradeWheat.value.toString()+'.html" ></object>';
     sliderTradeWheat.oninput = function() {
-      outputTradeWheat.innerHTML = 'TradeWheat in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+      outputTradeWheat.innerHTML = 'Trade Balance of wheat (crops) in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Wheat Crops Trade Balance tonnes_'+this.value.toString()+'.html" ></object>'
     }
   </script>
   <style>
