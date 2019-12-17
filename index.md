@@ -761,6 +761,64 @@ In this part, we want to pick out a few of the identified features and look at w
 
 ### Which countries are net importers of tomatoes?
 
+<div style="float: right; width: 100%; margin: 5% 0% 5% 0%;"> 
+  <div class="slidecontainer">
+    <input type="range" min="1970" max="2015" value="2000" class="slider" id="myRange">
+    <span id="map"></span>
+  </div>
+  <script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("map");
+    output.innerHTML = 'GDP in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    slider.oninput = function() {
+      output.innerHTML = 'GDP in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+    }
+  </script>
+  <style>
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+</style>
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Being a tomato importer also seems to be a **good predictor of wealth for the state**. Tomatoes are one of the most **important vegetable crops produced worldwide**, only potatoes have a higher production. Looking through the timeline, we clearly see that almost all **highly industrialized nations are continuously importing tomatoes**. Especially the United States, France and Germany are importing large quantities each year. It's not a big surprise, since tomatoes are a **popular ingredient in many modern western recipes**, but **require a climate** that is not well suited for most of the United States or Northern Europe.
+
+### Who imports and exports the other features of interest ?
+
 <div style="float: right; width: 100%; margin: 5% 0% 5% 0%;">
   <style>
 body {font-family: Arial;}
