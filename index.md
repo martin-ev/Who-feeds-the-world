@@ -769,7 +769,7 @@ In this part, we want to pick out a few of the identified features and look at w
     var outputTradeTomatoesAlone = document.getElementById("mapTradeTomatoesAlone");
     outputTradeTomatoesAlone.innerHTML = 'Trade Balance of green maize (crops) in the world in '+sliderTradeTomatoesAlone.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Tomatoes_'+sliderTradeTomatoesAlone.value.toString()+'.html" ></object>';
     sliderTradeTomatoesAlone.oninput = function() {
-      outputTradeTomatoesAlone.innerHTML = 'Trade Balance of green maize (crops) in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Tomatoes_'+this.value.toString()+'.html" ></object>'
+      outputTradeTomatoesAlone.innerHTML = 'Trade Balance of tomatoes (crops) in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Tomatoes_'+this.value.toString()+'.html" ></object>'
     }
   </script>
   <style>
