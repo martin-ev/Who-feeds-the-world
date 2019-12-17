@@ -2,7 +2,7 @@
 
 ### What are the insights of this data story?
 
-<div style="float: right; width: 45%; margin: 5% 5% 5% 5%;" w3-include-html="plots/wordcloud2.html"></div>
+<div style="float: right; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/wordcloud2.html"></div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Since the Neolithic Revolution, agriculture **feeds the world's population**. Even today, the agricultural sector **employs a large part of humanity** and is a **major part of the economy** of developed and developing countries. In the history of mankind, the **economic growth of countries** has almost always been accompanied by the development of agriculture and the **agricultural economy**, *i.e.* **production, imports and exports**.
 
@@ -10,7 +10,7 @@
 
 ### Which important events had a significant influence on the agriculture and the economy for the historical period from 1970 to 2015?
 
-<div style="float: left; width: 45%; margin: 5% 5% 5% 5%;" w3-include-html="plots/ussrdiss.html"></div>
+<div style="float: left; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/ussrdiss.html"></div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To be able to properly understand the studied data, we have to look at the historical context of the world. There was the **Cold war** from 1945 to 1990 between the two **economic superpowers** (USA and USSR). The USSR was then dissolved in 1991. The Japanese economic miracle occured from 1945 to 1990 and allowed Japan to come out of the disastrous state in which it was at the exit of WW2 and become one of the worlds largest economies. There have been 2 big oil crises, in 1973 and 1979. There have also been many wars (Middle East wars 1973-2000 e.g. Yom Kippur War 1973, Islamic Revolution in Iran 1979, Iran–Iraq war 1980-1988, Gulf war 1990-1991, Yugoslav wars 1991-2001...). The **third Agricultural Revolution** (also known as Green revolution) occured form 1960 to 1990 and improved agricultural productions thanks to fertilizers and chemicals.
 
