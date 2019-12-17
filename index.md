@@ -20,7 +20,7 @@
 
 <div style="float: right; width: 100%; margin: 5% 0% 5% 0%;"> 
   <div class="slidecontainer">
-    <input type="range" min="1970" max="2015" value="2000" class="slider" id="myRange">
+    <input type="range" min="1970" max="2014" value="2000" class="slider" id="myRange">
     <span id="map"></span>
   </div>
   <script>
@@ -179,7 +179,7 @@ body {font-family: Arial;}
 <div id="ProdCattle" class="tabcontentProd">
   <span onclick="this.parentElement.style.display='none'" class="toprightProd">X</span>
   <div class="slidecontainerProdCattle">
-    <input type="range" min="1970" max="2015" value="2000" class="sliderProdCattle" id="myRangeProdCattle">
+    <input type="range" min="1970" max="2014" value="2000" class="sliderProdCattle" id="myRangeProdCattle">
     <span id="mapProdCattle"></span>
   </div>
   <script>
@@ -233,7 +233,7 @@ body {font-family: Arial;}
 <div id="ProdMaize" class="tabcontentProd">
   <span onclick="this.parentElement.style.display='none'" class="toprightProd">X</span>
   <div class="slidecontainerProdMaize">
-    <input type="range" min="1970" max="2015" value="2000" class="sliderProdMaize" id="myRangeProdMaize">
+    <input type="range" min="1970" max="2014" value="2000" class="sliderProdMaize" id="myRangeProdMaize">
     <span id="mapProdMaize"></span>
   </div>
   <script>
@@ -287,7 +287,7 @@ body {font-family: Arial;}
 <div id="ProdGreenmaize" class="tabcontentProd">
   <span onclick="this.parentElement.style.display='none'" class="toprightProd">X</span>
   <div class="slidecontainerProdGreenmaize">
-    <input type="range" min="1970" max="2015" value="2000" class="sliderProdGreenmaize" id="myRangeProdGreenmaize">
+    <input type="range" min="1970" max="2014" value="2000" class="sliderProdGreenmaize" id="myRangeProdGreenmaize">
     <span id="mapProdGreenmaize"></span>
   </div>
   <script>
@@ -341,7 +341,7 @@ body {font-family: Arial;}
 <div id="ProdOats" class="tabcontentProd">
   <span onclick="this.parentElement.style.display='none'" class="toprightProd">X</span>
   <div class="slidecontainerProdOats">
-    <input type="range" min="1970" max="2015" value="2000" class="sliderProdOats" id="myRangeProdOats">
+    <input type="range" min="1970" max="2014" value="2000" class="sliderProdOats" id="myRangeProdOats">
     <span id="mapProdOats"></span>
   </div>
   <script>
@@ -395,7 +395,7 @@ body {font-family: Arial;}
 <div id="ProdPigs" class="tabcontentProd">
   <span onclick="this.parentElement.style.display='none'" class="toprightProd">X</span>
   <div class="slidecontainerProdPigs">
-    <input type="range" min="1970" max="2015" value="2000" class="sliderProdPigs" id="myRangeProdPigs">
+    <input type="range" min="1970" max="2014" value="2000" class="sliderProdPigs" id="myRangeProdPigs">
     <span id="mapProdPigs"></span>
   </div>
   <script>
@@ -449,7 +449,7 @@ body {font-family: Arial;}
 <div id="ProdSoybeans" class="tabcontentProd">
   <span onclick="this.parentElement.style.display='none'" class="toprightProd">X</span>
   <div class="slidecontainerProdSoybeans">
-    <input type="range" min="1970" max="2015" value="2000" class="sliderProdSoybeans" id="myRangeProdSoybeans">
+    <input type="range" min="1970" max="2014" value="2000" class="sliderProdSoybeans" id="myRangeProdSoybeans">
     <span id="mapProdSoybeans"></span>
   </div>
   <script>
@@ -503,7 +503,7 @@ body {font-family: Arial;}
 <div id="ProdTomatoes" class="tabcontentProd">
   <span onclick="this.parentElement.style.display='none'" class="toprightProd">X</span>
   <div class="slidecontainerProdTomatoes">
-    <input type="range" min="1970" max="2015" value="2000" class="sliderProdTomatoes" id="myRangeProdTomatoes">
+    <input type="range" min="1970" max="2014" value="2000" class="sliderProdTomatoes" id="myRangeProdTomatoes">
     <span id="mapProdTomatoes"></span>
   </div>
   <script>
@@ -557,7 +557,7 @@ body {font-family: Arial;}
 <div id="ProdTurkeys" class="tabcontentProd">
   <span onclick="this.parentElement.style.display='none'" class="toprightProd">X</span>
   <div class="slidecontainerProdTurkeys">
-    <input type="range" min="1970" max="2015" value="2000" class="sliderProdTurkeys" id="myRangeProdTurkeys">
+    <input type="range" min="1970" max="2014" value="2000" class="sliderProdTurkeys" id="myRangeProdTurkeys">
     <span id="mapProdTurkeys"></span>
   </div>
   <script>
@@ -611,7 +611,7 @@ body {font-family: Arial;}
 <div id="ProdWheat" class="tabcontentProd">
   <span onclick="this.parentElement.style.display='none'" class="toprightProd">X</span>
   <div class="slidecontainerProdWheat">
-    <input type="range" min="1970" max="2015" value="2000" class="sliderProdWheat" id="myRangeProdWheat">
+    <input type="range" min="1970" max="2014" value="2000" class="sliderProdWheat" id="myRangeProdWheat">
     <span id="mapProdWheat"></span>
   </div>
   <script>
@@ -705,7 +705,7 @@ In this part, we want to pick out a few of the identified features and look at w
 
 <div style="float: right; width: 100%; margin: 5% 0% 5% 0%;"> 
   <div class="slidecontainer">
-    <input type="range" min="1970" max="2015" value="2000" class="slider" id="myRange">
+    <input type="range" min="1970" max="2014" value="2000" class="slider" id="myRange">
     <span id="map"></span>
   </div>
   <script>
@@ -827,7 +827,7 @@ body {font-family: Arial;}
 <div id="TradeCattle" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="toprightTrade">X</span>
   <div class="slidecontainerTradeCattle">
-    <input type="range" min="1970" max="2015" value="2000" class="sliderTradeCattle" id="myRangeTradeCattle">
+    <input type="range" min="1970" max="2014" value="2000" class="sliderTradeCattle" id="myRangeTradeCattle">
     <span id="mapTradeCattle"></span>
   </div>
   <script>
@@ -881,7 +881,7 @@ body {font-family: Arial;}
 <div id="TradeMaize" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="toprightTrade">X</span>
   <div class="slidecontainerTradeMaize">
-    <input type="range" min="1970" max="2015" value="2000" class="sliderTradeMaize" id="myRangeTradeMaize">
+    <input type="range" min="1970" max="2014" value="2000" class="sliderTradeMaize" id="myRangeTradeMaize">
     <span id="mapTradeMaize"></span>
   </div>
   <script>
@@ -935,7 +935,7 @@ body {font-family: Arial;}
 <div id="TradeGreenmaize" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="toprightTrade">X</span>
   <div class="slidecontainerTradeGreenmaize">
-    <input type="range" min="1970" max="2015" value="2000" class="sliderTradeGreenmaize" id="myRangeTradeGreenmaize">
+    <input type="range" min="1970" max="2014" value="2000" class="sliderTradeGreenmaize" id="myRangeTradeGreenmaize">
     <span id="mapTradeGreenmaize"></span>
   </div>
   <script>
@@ -989,7 +989,7 @@ body {font-family: Arial;}
 <div id="TradeOats" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="toprightTrade">X</span>
   <div class="slidecontainerTradeOats">
-    <input type="range" min="1970" max="2015" value="2000" class="sliderTradeOats" id="myRangeTradeOats">
+    <input type="range" min="1970" max="2014" value="2000" class="sliderTradeOats" id="myRangeTradeOats">
     <span id="mapTradeOats"></span>
   </div>
   <script>
@@ -1043,7 +1043,7 @@ body {font-family: Arial;}
 <div id="TradePigs" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="toprightTrade">X</span>
   <div class="slidecontainerTradePigs">
-    <input type="range" min="1970" max="2015" value="2000" class="sliderTradePigs" id="myRangeTradePigs">
+    <input type="range" min="1970" max="2014" value="2000" class="sliderTradePigs" id="myRangeTradePigs">
     <span id="mapTradePigs"></span>
   </div>
   <script>
@@ -1097,7 +1097,7 @@ body {font-family: Arial;}
 <div id="TradeSoybeans" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="toprightTrade">X</span>
   <div class="slidecontainerTradeSoybeans">
-    <input type="range" min="1970" max="2015" value="2000" class="sliderTradeSoybeans" id="myRangeTradeSoybeans">
+    <input type="range" min="1970" max="2014" value="2000" class="sliderTradeSoybeans" id="myRangeTradeSoybeans">
     <span id="mapTradeSoybeans"></span>
   </div>
   <script>
@@ -1151,7 +1151,7 @@ body {font-family: Arial;}
 <div id="TradeTomatoes" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="toprightTrade">X</span>
   <div class="slidecontainerTradeTomatoes">
-    <input type="range" min="1970" max="2015" value="2000" class="sliderTradeTomatoes" id="myRangeTradeTomatoes">
+    <input type="range" min="1970" max="2014" value="2000" class="sliderTradeTomatoes" id="myRangeTradeTomatoes">
     <span id="mapTradeTomatoes"></span>
   </div>
   <script>
@@ -1205,7 +1205,7 @@ body {font-family: Arial;}
 <div id="TradeTurkeys" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="toprightTrade">X</span>
   <div class="slidecontainerTradeTurkeys">
-    <input type="range" min="1970" max="2015" value="2000" class="sliderTradeTurkeys" id="myRangeTradeTurkeys">
+    <input type="range" min="1970" max="2014" value="2000" class="sliderTradeTurkeys" id="myRangeTradeTurkeys">
     <span id="mapTradeTurkeys"></span>
   </div>
   <script>
@@ -1259,7 +1259,7 @@ body {font-family: Arial;}
 <div id="TradeWheat" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="toprightTrade">X</span>
   <div class="slidecontainerTradeWheat">
-    <input type="range" min="1970" max="2015" value="2000" class="sliderTradeWheat" id="myRangeTradeWheat">
+    <input type="range" min="1970" max="2014" value="2000" class="sliderTradeWheat" id="myRangeTradeWheat">
     <span id="mapTradeWheat"></span>
   </div>
   <script>
