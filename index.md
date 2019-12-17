@@ -185,9 +185,9 @@ body {font-family: Arial;}
   <script>
     var sliderProdCattle = document.getElementById("myRangeProdCattle");
     var outputProdCattle = document.getElementById("mapProdCattle");
-    outputProdCattle.innerHTML = 'ProdCattle in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
+    outputProdCattle.innerHTML = 'Production of cattle (livestock) in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Cattle Livestock production Head_'+slider.value.toString()+'.html" ></object>';
     sliderProdCattle.oninput = function() {
-      outputProdCattle.innerHTML = 'ProdCattle in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+      outputProdCattle.innerHTML = 'ProdCattle in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Cattle Livestock production Head_'+this.value.toString()+'.html" ></object>'
     }
   </script>
   <style>
