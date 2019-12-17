@@ -76,7 +76,7 @@
 
 <div style="clear: right; width: 100%;"></div>
 
-### What is the structure of international trade ?
+### What is the structure of international trade?
 
 <div style="float: left; width: 100%; margin: 5% 0% 5% 0%;" w3-include-html="plots/clusters.html"></div>
 
@@ -86,9 +86,17 @@
 
 ## About the dataset <a name="dataset"></a>
 
+### Where does the dataset come from? 
+
+TODO **TODO**
+
+### What does it contain? 
+
+TODO **TODO**
+
 ## Most important agricultural and economical features <a name="features"></a>
 
-### Which features are the most influential features on the Gross Domestic Product ? 
+### Which features are the most influential features on the Gross Domestic Product? 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We use **knowledge** based method and more **technical**,  data analysis algorithm, to select the feature. However we expect to see the most traded goods as the most influential ones.
 
@@ -685,7 +693,12 @@ document.getElementById("defaultOpenProd").click();
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Globally, all features that we identified seem to **follow a common trend**. The **biggest producers** are in almost all categories **China, the USA and Brazil**. Russia, France, Spain, Germany seem to get closer to their volumes. The rest of Europe is situated in the second or third tier of producers as well as the other developed countries (Australia, Canada, south American countries). In the majority of categories, north and south African countries are situated in the same orders of magnitude as developed countries. A general trend to observe is that **central African countries seem to produce very few resources** in comparison to the rest of the world. The only feature going against this general description seems to be the **cattle**. The production of cattle appears to be **very well distributed** throughout the world. The production of pigs also seem well distributed throughout the world except for countries excluding pork from their diet for religious purposes. The phenomenon might be explained by the increased difficulty in transporting these goods. Live animals and meat **transport is much more complicated** than grain, vegetables or forage. Meaning that the countries would generally **produce what they need** in term of meat and rather import crops or vegetables.  
 
+### Are big producers wealthier? 
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The general trend we observe is that **developed countries are bigger producers**. This makes sense considering how we selected these features. Our regression model gives us the features that are **connected with a high GDP** thus the features selected will be markers of rich countries.
+
+
+### Is the production of important items stable? 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What can be found surprising is the **stability of the producer ranking** throughout the years. The top producers 50 years ago are still the top producers nowadays. It is also worth noting that globally, even though the ranking does not change, the **sheer production volume follows a growing trend**.
 
@@ -1389,6 +1402,8 @@ TODO **TODO**
 
 ### evtl Graph production trend 1 developed country 1 other
 
+TODO **TODO**
+
 ## Self-sufficency <a name="selfsufficiency"></a>
 
 ### How is the self-suffiency score distributed for the selected features?
@@ -1452,7 +1467,11 @@ TODO **TODO**
 
 ### -> Comparison with GDP??
 
+TODO **TODO**
+
 ### Link with exporters??
+
+TODO **TODO**
 
 ## Conclusion <a name="conclusion"></a>
 
