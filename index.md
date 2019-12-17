@@ -703,25 +703,24 @@ In this part, we want to pick out a few of the identified features and look at w
 
 ### Which countries are net exporters of green maize?
 
-<div style="float: right; width: 100%; margin: 5% 0% 5% 0%;"> 
-  <div class="slidecontainer">
-    <input type="range" min="1970" max="2014" value="2000" class="slider" id="myRange">
-    <span id="map"></span>
+<div class="slidecontainerTradeGreenmaizeAlone">
+    <input type="range" min="1970" max="2013" value="2000" class="sliderTradeGreenmaizeAlone" id="myRangeTradeGreenmaizeAlone">
+    <span id="mapTradeGreenmaizeAlone"></span>
   </div>
   <script>
-    var slider = document.getElementById("myRange");
-    var output = document.getElementById("map");
-    output.innerHTML = 'GDP in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
-    slider.oninput = function() {
-      output.innerHTML = 'GDP in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+    var sliderTradeGreenmaizeAlone = document.getElementById("myRangeTradeGreenmaizeAlone");
+    var outputTradeGreenmaizeAlone = document.getElementById("mapTradeGreenmaizeAlone");
+    outputTradeGreenmaizeAlone.innerHTML = 'Trade Balance of green maize (crops) in the world in '+sliderTradeGreenmaizeAlone.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Maize, green_'+sliderTradeGreenmaizeAlone.value.toString()+'.html" ></object>';
+    sliderTradeGreenmaizeAlone.oninput = function() {
+      outputTradeGreenmaizeAlone.innerHTML = 'Trade Balance of green maize (crops) in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Maize, green_'+this.value.toString()+'.html" ></object>'
     }
   </script>
   <style>
-.slidecontainer {
+.slidecontainerTradeGreenmaizeAlone {
   width: 100%;
 }
 
-.slider {
+.sliderTradeGreenmaizeAlone {
   -webkit-appearance: none;
   width: 100%;
   height: 15px;
@@ -733,11 +732,11 @@ In this part, we want to pick out a few of the identified features and look at w
   transition: opacity .2s;
 }
 
-.slider:hover {
+.sliderTradeGreenmaizeAlone:hover {
   opacity: 1;
 }
 
-.slider::-webkit-slider-thumb {
+.sliderTradeGreenmaizeAlone::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 25px;
@@ -747,7 +746,7 @@ In this part, we want to pick out a few of the identified features and look at w
   cursor: pointer;
 }
 
-.slider::-moz-range-thumb {
+.sliderTradeGreenmaizeAlone::-moz-range-thumb {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -761,25 +760,24 @@ In this part, we want to pick out a few of the identified features and look at w
 
 ### Which countries are net importers of tomatoes?
 
-<div style="float: right; width: 100%; margin: 5% 0% 5% 0%;"> 
-  <div class="slidecontainer">
-    <input type="range" min="1970" max="2015" value="2000" class="slider" id="myRange">
-    <span id="map"></span>
+<div class="slidecontainerTradeTomatoesAlone">
+    <input type="range" min="1970" max="2013" value="2000" class="sliderTradeTomatoesAlone" id="myRangeTradeTomatoesAlone">
+    <span id="mapTradeTomatoesAlone"></span>
   </div>
   <script>
-    var slider = document.getElementById("myRange");
-    var output = document.getElementById("map");
-    output.innerHTML = 'GDP in the world in '+slider.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+slider.value.toString()+'GDP.html" ></object>';
-    slider.oninput = function() {
-      output.innerHTML = 'GDP in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/'+this.value.toString()+'GDP.html" ></object>'
+    var sliderTradeTomatoesAlone = document.getElementById("myRangeTradeTomatoesAlone");
+    var outputTradeTomatoesAlone = document.getElementById("mapTradeTomatoesAlone");
+    outputTradeTomatoesAlone.innerHTML = 'Trade Balance of green maize (crops) in the world in '+sliderTradeTomatoesAlone.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Tomatoes_'+sliderTradeTomatoesAlone.value.toString()+'.html" ></object>';
+    sliderTradeTomatoesAlone.oninput = function() {
+      outputTradeTomatoesAlone.innerHTML = 'Trade Balance of green maize (crops) in the world in '+this.value.toString()+'\n<object style="width: 100%; height: 500px;" type="text/html" data="plots/Tomatoes_'+this.value.toString()+'.html" ></object>'
     }
   </script>
   <style>
-.slidecontainer {
+.slidecontainerTradeTomatoesAlone {
   width: 100%;
 }
 
-.slider {
+.sliderTradeTomatoesAlone {
   -webkit-appearance: none;
   width: 100%;
   height: 15px;
@@ -791,11 +789,11 @@ In this part, we want to pick out a few of the identified features and look at w
   transition: opacity .2s;
 }
 
-.slider:hover {
+.sliderTradeTomatoesAlone:hover {
   opacity: 1;
 }
 
-.slider::-webkit-slider-thumb {
+.sliderTradeTomatoesAlone::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 25px;
@@ -805,7 +803,7 @@ In this part, we want to pick out a few of the identified features and look at w
   cursor: pointer;
 }
 
-.slider::-moz-range-thumb {
+.sliderTradeTomatoesAlone::-moz-range-thumb {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -885,7 +883,7 @@ body {font-family: Arial;}
 <div id="TradeCattle" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="toprightTrade">X</span>
   <div class="slidecontainerTradeCattle">
-    <input type="range" min="1970" max="2014" value="2000" class="sliderTradeCattle" id="myRangeTradeCattle">
+    <input type="range" min="1970" max="2013" value="2000" class="sliderTradeCattle" id="myRangeTradeCattle">
     <span id="mapTradeCattle"></span>
   </div>
   <script>
@@ -939,7 +937,7 @@ body {font-family: Arial;}
 <div id="TradeMaize" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="toprightTrade">X</span>
   <div class="slidecontainerTradeMaize">
-    <input type="range" min="1970" max="2014" value="2000" class="sliderTradeMaize" id="myRangeTradeMaize">
+    <input type="range" min="1970" max="2013" value="2000" class="sliderTradeMaize" id="myRangeTradeMaize">
     <span id="mapTradeMaize"></span>
   </div>
   <script>
@@ -993,7 +991,7 @@ body {font-family: Arial;}
 <div id="TradeGreenmaize" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="toprightTrade">X</span>
   <div class="slidecontainerTradeGreenmaize">
-    <input type="range" min="1970" max="2014" value="2000" class="sliderTradeGreenmaize" id="myRangeTradeGreenmaize">
+    <input type="range" min="1970" max="2013" value="2000" class="sliderTradeGreenmaize" id="myRangeTradeGreenmaize">
     <span id="mapTradeGreenmaize"></span>
   </div>
   <script>
@@ -1047,7 +1045,7 @@ body {font-family: Arial;}
 <div id="TradeOats" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="toprightTrade">X</span>
   <div class="slidecontainerTradeOats">
-    <input type="range" min="1970" max="2014" value="2000" class="sliderTradeOats" id="myRangeTradeOats">
+    <input type="range" min="1970" max="2013" value="2000" class="sliderTradeOats" id="myRangeTradeOats">
     <span id="mapTradeOats"></span>
   </div>
   <script>
@@ -1101,7 +1099,7 @@ body {font-family: Arial;}
 <div id="TradePigs" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="toprightTrade">X</span>
   <div class="slidecontainerTradePigs">
-    <input type="range" min="1970" max="2014" value="2000" class="sliderTradePigs" id="myRangeTradePigs">
+    <input type="range" min="1970" max="2013" value="2000" class="sliderTradePigs" id="myRangeTradePigs">
     <span id="mapTradePigs"></span>
   </div>
   <script>
@@ -1155,7 +1153,7 @@ body {font-family: Arial;}
 <div id="TradeSoybeans" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="toprightTrade">X</span>
   <div class="slidecontainerTradeSoybeans">
-    <input type="range" min="1970" max="2014" value="2000" class="sliderTradeSoybeans" id="myRangeTradeSoybeans">
+    <input type="range" min="1970" max="2013" value="2000" class="sliderTradeSoybeans" id="myRangeTradeSoybeans">
     <span id="mapTradeSoybeans"></span>
   </div>
   <script>
@@ -1209,7 +1207,7 @@ body {font-family: Arial;}
 <div id="TradeTomatoes" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="toprightTrade">X</span>
   <div class="slidecontainerTradeTomatoes">
-    <input type="range" min="1970" max="2014" value="2000" class="sliderTradeTomatoes" id="myRangeTradeTomatoes">
+    <input type="range" min="1970" max="2013" value="2000" class="sliderTradeTomatoes" id="myRangeTradeTomatoes">
     <span id="mapTradeTomatoes"></span>
   </div>
   <script>
@@ -1263,7 +1261,7 @@ body {font-family: Arial;}
 <div id="TradeTurkeys" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="toprightTrade">X</span>
   <div class="slidecontainerTradeTurkeys">
-    <input type="range" min="1970" max="2014" value="2000" class="sliderTradeTurkeys" id="myRangeTradeTurkeys">
+    <input type="range" min="1970" max="2013" value="2000" class="sliderTradeTurkeys" id="myRangeTradeTurkeys">
     <span id="mapTradeTurkeys"></span>
   </div>
   <script>
@@ -1317,7 +1315,7 @@ body {font-family: Arial;}
 <div id="TradeWheat" class="tabcontentTrade">
   <span onclick="this.parentElement.style.display='none'" class="toprightTrade">X</span>
   <div class="slidecontainerTradeWheat">
-    <input type="range" min="1970" max="2014" value="2000" class="sliderTradeWheat" id="myRangeTradeWheat">
+    <input type="range" min="1970" max="2013" value="2000" class="sliderTradeWheat" id="myRangeTradeWheat">
     <span id="mapTradeWheat"></span>
   </div>
   <script>
