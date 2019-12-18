@@ -12,7 +12,7 @@
 
 <div style="float: left; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/ussrdiss.html"></div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To be able to properly understand the studied data, we have to first look at the historical context of the world. There was the **Cold war** from 1945 to 1990 between the two **economic superpowers** (USA and USSR). The USSR was then dissolved in 1991. The Japanese economic miracle occured from 1945 to 1990 and allowed Japan to come out of the disastrous state in which it was at the exit of WW2 and become one of the worlds largest economies. There have been 2 big oil crises, in 1973 and 1979. There have also been many wars (Middle East wars 1973-2000 e.g. Yom Kippur War 1973, Islamic Revolution in Iran 1979, Iran–Iraq war 1980-1988, Gulf war 1990-1991, Yugoslav wars 1991-2001...). The **third Agricultural Revolution** (also known as Green revolution) occured form 1960 to 1990 and improved agricultural productions thanks to fertilizers and chemicals.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To be able to properly understand the studied data, we have to first look at the historical context of the period we are analyzing. There was the **Cold war** from 1945 to 1990 between the two **economic superpowers** (USA and USSR). The USSR was then dissolved in 1991. The Japanese economic miracle occured from 1945 to 1990 and allowed Japan to come out of the disastrous state in which it was at the exit of WW2 and become one of the worlds largest economies. There have been 2 big oil crises, in 1973 and 1979. There have also been many wars (Middle East wars 1973-2000 e.g. Yom Kippur War 1973, Islamic Revolution in Iran 1979, Iran–Iraq war 1980-1988, Gulf war 1990-1991, Yugoslav wars 1991-2001...). The **third Agricultural Revolution** (also known as Green revolution) occured form 1960 to 1990 and improved agricultural productions thanks to fertilizers and chemicals.
 
 <div style="clear: left; width: 100%;"></div>
 
@@ -85,18 +85,21 @@
 <div style="clear: left; width: 100%;"></div>
 
 ## About the dataset <a name="dataset"></a>
-The data that we use for analysis comes from the **"Global Food & Agriculture Statistic"**. It is adataset by the **Food and Agriculture Organization of the United Nations** and includes extensive information about many factors related to agriculture, such as production output, food prices, trade balances and environmental impacts among others. It includes countrywise yearly values from 1970 to 2015. We p
+The data that we use for analysis comes from the **"Global Food & Agriculture Statistic"**. It is a dataset by the **Food and Agriculture Organization of the United Nations** and includes extensive information about many factors related to agriculture, such as production output, food prices, trade balances and environmental impacts among others. It includes countrywise yearly values from 1970 to 2015. 
+
+## Our approach
+How to measure economic success? The first and most intuitive is to use the **Gross Domestic Product** of countries. The second approach we took was **price stability**, expressed in low levels of inflation and thus small changes in the **Consumer Price Index**. Can we create a model that will tell us which products to produce and which to trade to **maximize for GDP** or **minimize for inflation**? As it turned out, price stability did not yield significant correlations to any production or trade. GDP however did... 
 
 
 ## Most important agricultural and economical features <a name="features"></a>
 
 ### Which features are the most influential features on the Gross Domestic Product? 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We use **knowledge** based method and more **technical**,  data analysis algorithm, to select the feature. However we expect to see the most traded goods as the most influential ones.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Using a **knowledge** based method as well as a more **technical**,  data analysis algorithm, we were able to select specific features. However, as we expect the most influential goods to not only have high correlation with GDP, but to also be globally relevant in production volume, we narrowed down our possible choice of features.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We find that the goods that most influences the GDP are **soybean, tomatoes, maize, wheat, cattle live animals and pigs** amongst other. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We find that the goods that most influenced the GDP are **soybeans, tomatoes, maize, wheat, cattle, live animals and pigs** amongst others. 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It is an interesting result that is easily understandable. Take **soybean** for example. This crop is one of the **most produced**. The mains exporter are the US, Brasil and Argentina and the main importer is China. Around **330 millions tonnes** of soybean was produced in 2018. It is vastly used to **feed animals**. It is thus coherent to see such an important good be selected by our model. We see also that wheat, oats, cattle live and pigs are present. This again is easily understandable. It is sufficient to look at our **eating habit** to convince ourself that those goods plays an important role in the GDP. Below is the full list of the selected features:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It is an interesting result that is easily understandable. Take **soybeans** for example. This crop is one of the **most produced** worldwide. The main exporters are the US, Brasil and Argentina and the main importer is China. Around **330 millions tonnes** of soybeans was produced in 2018. It is vastly used to **feed animals**. It is thus coherent to see such an important good be selected by our model. We also see that wheat, oats, cattle live and pigs are present. This again is easily understandable. It is sufficient to look at our **eating habit** to convince ourself that those goods plays an important role in GDP. Below is the full list of the selected features:
 
 - Soybeans Crops Production tonnes
 - Tomatoes Crops Production tonnes
@@ -685,16 +688,16 @@ document.getElementById("defaultOpenProd").click();
 </script>  
 </div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Globally, all features that we identified seem to **follow a common trend**. The **biggest producers** are in almost all categories **China, the USA and Brazil**. Russia, France, Spain, Germany seem to get closer to their volumes. The rest of Europe is situated in the second or third tier of producers as well as the other developed countries (Australia, Canada, south American countries). In the majority of categories, north and south African countries are situated in the same orders of magnitude as developed countries. A general trend to observe is that **central African countries seem to produce very few resources** in comparison to the rest of the world. The only feature going against this general description seems to be the **cattle**. The production of cattle appears to be **very well distributed** throughout the world. The production of pigs also seem well distributed throughout the world except for countries excluding pork from their diet for religious purposes. The phenomenon might be explained by the increased difficulty in transporting these goods. Live animals and meat **transport is much more complicated** than grain, vegetables or forage. Meaning that the countries would generally **produce what they need** in term of meat and rather import crops or vegetables.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Globally, all features that we identified seem to **follow a common trend**. The **biggest producers** are in almost all categories **China, the USA and Brazil**. Russia, France, Spain, Germany seem to get closer to their volumes. The rest of Europe is situated in the second or third tier of producers as well as the other developed countries (Australia, Canada, south American countries). In the majority of categories, north and south African countries are situated in the same orders of magnitude as developed countries. A general trend to observe is that **central African countries seem to produce very few resources** in comparison to the rest of the world. The only feature going against this general description seems to be **cattle**. The production of cattle appears to be **very well distributed** throughout the world. The production of pigs also seems well distributed throughout the world except for countries excluding pork from their diet for religious purposes. The phenomenon might be explained by the increased difficulty in transporting these goods. Live animals and meat **transport is much more complicated** than grain, vegetables or forage. Meaning that the countries would generally **produce what they need** in terms of meat and rather import crops or vegetables.  
 
 ### Are big producers wealthier? 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The general trend we observe is that **developed countries are bigger producers**. This makes sense considering how we selected these features. Our regression model gives us the features that are **connected with a high GDP** thus the features selected will be markers of rich countries.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The general trend we observe is that **developed countries are bigger producers**. This makes sense considering how we selected these features. Our regression model gives us the features that are **connected with a high GDP** thus the features selected will be markers of rich countries. 
 
 
 ### Is the production of important items stable? 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What can be found surprising is the **stability of the producer ranking** throughout the years. The top producers 50 years ago are still the top producers nowadays. It is also worth noting that globally, even though the ranking does not change, the **sheer production volume follows a growing trend**.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What can be found surprising is the **stability of the producer ranking** throughout the years. The top producers 50 years ago are still the top producers nowadays. It is also worth noting that globally, even though the ranking does not change much, the **sheer production volume follows a growing trend**.
 
 ## Global Trade Balances <a name="balances"></a>
 
@@ -818,7 +821,7 @@ In this part, we want to pick out a few of the identified features and look at w
 }
 </style>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Being a tomato importer also seems to be a **good predictor of wealth for the state**. Tomatoes are one of the most **important vegetable crops produced worldwide**, only potatoes have a higher production. Looking through the timeline, we clearly see that almost all **highly industrialized nations are continuously importing tomatoes**. Especially the United States, France and Germany are importing large quantities each year. It's not a big surprise, since tomatoes are a **popular ingredient in many modern western recipes**, but **require a climate** that is not well suited for most of the United States or Northern Europe.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Being a tomato importer, but also a tomato producer seems to be a **good predictor of wealth for the state**. Tomatoes are one of the most **important vegetable crops produced worldwide**, only potatoes have a higher production. Looking through the timeline, we clearly see that almost all **highly industrialized nations are continuously importing tomatoes**. Especially the United States, France and Germany are importing large quantities each year. It's not a big surprise, since tomatoes are a **popular ingredient in many modern western recipes**, but **require a climate** that is not well suited for most of the United States or Northern Europe.
 
 ### Who imports and exports the other features of interest ?
 
