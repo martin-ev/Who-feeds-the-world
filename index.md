@@ -4,7 +4,7 @@
 
 <div style="float: right; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/wordcloud2.html"></div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Since the Neolithic Revolution, agriculture **feeds the world's population**. Even today, the agricultural sector **employs a large part of humanity** and is a **major part of the economy** of developed and developing countries. In the history of mankind, the **economic growth of countries** has almost always been accompanied by the development of agriculture and the **agricultural economy**, *i.e.* **production, imports and exports**. In this data story we want to explore different links between agricultural production and trade with the economic success of countries. Which crops, which animals are traded by richer countries? Do they tend to be net exporters or importers of food? Do they tend to be self-sufficient? 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Since the Neolithic Revolution, agriculture **feeds the world's population**. Even today, the agricultural sector **employs a large part of humanity** and is a **major part of the economy** of developed and developing countries. In the history of mankind, the **economic growth of countries** has almost always been accompanied by the development of agriculture and the **agricultural economy**, *i.e.* **production, imports and exports**. In this data story we want to explore different links between agricultural production and trade with the economic success of countries. Which crops, which animals are traded by richer countries? Do they tend to be net exporters or importers of food? Do they tend to be self-sufficient? We try to answer all of these questions and show many interesting insights along the way.
 
 <div style="clear: right; width: 100%;"></div>
 
@@ -85,6 +85,8 @@
 <div style="clear: left; width: 100%;"></div>
 
 ## About the dataset <a name="dataset"></a>
+The  **"Global Food & Agriculture Statistic"** is the dataset by the **Food and Agriculture Organization of the United Nations** and includes detailed information about global agricultural output, but also on environmental impacts as well as economic ones. We decided to focus on the economical aspect and 
+
 
 ### Where does the dataset come from? 
 
