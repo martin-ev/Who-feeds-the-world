@@ -4,7 +4,7 @@
 
 <div style="float: right; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/wordcloud2.html"></div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Since the Neolithic Revolution, agriculture **feeds the world's population**. Even today, the agricultural sector **employs a large part of humanity** and is a **major part of the economy** of developed and developing countries. In the history of mankind, the **economic growth of countries** has almost always been accompanied by the development of agriculture and the **agricultural economy**, *i.e.* **production, imports and exports**. In this data story we want to explore different links between agricultural production and trade with the economic success of countries. Which crops, which animals are traded by richer countries? Do they tend to be net exporters or importers of food? Do they tend to be self-sufficient? We try to answer all of these questions and show many interesting insights along the way.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Since the Neolithic Revolution, agriculture **feeds the world's population**. Even today, the agricultural sector **employs a large part of humanity** and is a **major part of the economy** of developed and developing countries. In the history of mankind, the **economic growth of countries** has almost always been accompanied by the development of agriculture and the **agricultural economy**, *i.e.* **production, imports and exports**. In this data story we want to explore different links between the agriculture and the economic success of countries. Which crops are produced and which animals are traded by richer countries? Do they tend to be net exporters or importers of food? Do they tend to be self-sufficient? We try to answer all of these questions and show many interesting insights along the way.
 
 <div style="clear: right; width: 100%;"></div>
 
@@ -80,21 +80,13 @@
 
 <div style="float: left; width: 100%; margin: 5% 0% 5% 0%;" w3-include-html="plots/clusters.html"></div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This network shows just how **highly correlated** the evolution of GDP from one country to another is. Possibly the most obvious observation from this network graph is the clear distinction between **former Eastern Bloc** countries and the rest of the world. About half of the years of our dataset are during the **East-West divide** where there were **two clear global trade blocks**. Nevertheless, GPD **increased the same way** almost everywhere and the whole world is close to being a single big cluster. This can be explained by the fact that the **global economy is highly interlinked** and countries have **strong trading relations** to make the GDP evolve the same way. Global trade has been substantially increasing throughout the past decades. Today, almost all countries worldwide are part of the World Trade Organization, which makes sure that tariffs and other barriers to trade are reduced. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This network shows just how **highly correlated** the evolution of GDP from one country to another is. Possibly the most obvious observation from this network graph is the clear distinction between **former Eastern Bloc** countries and the rest of the world. About half of the years of our dataset are during the **East-West divide** where there were **two clear global trade blocks**. Nevertheless, GPD **increased the same way** almost everywhere and the whole world is close to being a single big cluster. This can be explained by the fact that the **global economy is highly interlinked** and countries have **strong trading relations** which leads to the GDP evolving the same way. Global trade and thus interdependence has been continuously increasing throughout the past decades. There are many institutions put into place for this to be possible. Today, almost all countries worldwide are part of the **World Trade Organization**, which makes sure that tariffs and other barriers to trade are reduced. In the past years, we've also seen that many countries, especially the **United States**, are becoming increasingly more **sceptical of global trade** and even engage in **trade wars**. What kind of impacts could this have on the future of **international trade**? 
 
 <div style="clear: left; width: 100%;"></div>
 
 ## About the dataset <a name="dataset"></a>
-The  **"Global Food & Agriculture Statistic"** is the dataset by the **Food and Agriculture Organization of the United Nations** and includes detailed information about global agricultural output, but also on environmental impacts as well as economic ones. We decided to focus on the economical aspect and 
+The data that we use for analysis comes from the **"Global Food & Agriculture Statistic"**. It is adataset by the **Food and Agriculture Organization of the United Nations** and includes extensive information about many factors related to agriculture, such as production output, food prices, trade balances and environmental impacts among others. It includes countrywise yearly values from 1970 to 2015. We p
 
-
-### Where does the dataset come from? 
-
-TODO **TODO**
-
-### What does it contain? 
-
-TODO **TODO**
 
 ## Most important agricultural and economical features <a name="features"></a>
 
