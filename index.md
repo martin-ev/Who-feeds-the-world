@@ -99,20 +99,22 @@ How to measure economic success? The first and most intuitive is to use the **Gr
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We find that the goods that most influenced the GDP are **soybeans, tomatoes, maize, wheat, cattle, live animals and pigs** amongst others. 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It is an interesting result that is easily understandable. Take **soybeans** for example. This crop is one of the **most produced** worldwide. The main exporters are the US, Brasil and Argentina and the main importer is China. Around **330 millions tonnes** of soybeans was produced in 2018. It is vastly used to **feed animals**. It is thus coherent to see such an important good be selected by our model. We also see that wheat, oats, cattle live and pigs are present. This again is easily understandable. It is sufficient to look at our **eating habit** to convince ourself that those goods plays an important role in GDP. Below is the full list of the selected features:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It is an interesting result that is easily understandable. Take **soybeans** for example. This crop is one of the **most produced** worldwide. The main exporters are the US, Brasil and Argentina and the main importer is China. Around **330 millions tonnes** of soybeans was produced in 2018. It is vastly used to **feed animals**. It is thus coherent to see such an important good be selected by our model. We also see that wheat, oats, cattle live and pigs are present. This again is easily understandable. It is sufficient to look at our **eating habit** to convince ourself that those goods plays an important role in GDP. Below is the full list of the selected features, sorted by order of importance attributed by the model:
 
-- Soybeans Crops Production tonnes
-- Tomatoes Crops Production tonnes
-- Maize Crops Production tonnes
-- Turkeys Livestock production Head
-- Maize Food export quantities tonnes
 - Maize, green Food export quantities tonnes
-- Wheat Food export quantities tonnes
-- Cattle Live animals import quantities Head
+- Tomatoes Food import quantities tonnes
 - Oats Food import quantities tonnes
 - Pigs Live animals import quantities Head
-- Tomatoes Food import quantities tonnes
 - Turkeys Live animals import quantities Head
+- Tomatoes Crops Production tonnes
+- Cattle Live animals import quantities Head
+- Maize Crops Production tonnes
+- Soybeans Crops Production tonnes
+- Wheat Food export quantities tonnes
+- Turkeys Livestock production Head
+- Maize Food export quantities tonnes
+
+
 
 ## Global production <a name="production"></a>
 
