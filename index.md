@@ -72,7 +72,7 @@
 </style>
 </div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In 1970, the countries with the highest GDP were **United States**, **Germany**, **Japan**, **France**, **United Kingdom** and **Italy**. Japan overtook Germany in 1971. Around the 90s, Italy and UK were fighting for 5th place in the ranking. From 1996 to 2006 the UK surpassed France. China entered the top 6 in 1999 in place of Italy and got 2nd in ranking in 2009. In average, **GDP increased** during this period.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In 1970, the countries with the highest GDP were **United States**, **Germany**, **Japan**, **France**, **United Kingdom** and **Italy**. Japan overtook Germany in 1971. Around the 90s, Italy and UK were fighting for 5th place in the ranking. From 1996 to 2006 the UK surpassed France. China entered the top 6 in 1999 in place of Italy and got 2nd in ranking in 2009. On average, **GDP continuously increased** during this period.
 
 <div style="clear: right; width: 100%;"></div>
 
@@ -80,7 +80,7 @@
 
 <div style="float: left; width: 100%; margin: 5% 0% 5% 0%;" w3-include-html="plots/clusters.html"></div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GDP is **highly correlated** from one country to another. Globally, they **almost all increased the same way**. This can be explained by the fact that the **global economy is highly interlinked** and countries have **strong enough trading relations** to make the GDP evolve the same way. Furthermore, one can identify **main regions** in which the trading relations are more important. Possibly the most obvious observation from this network graph is the clear distinction between **former Eastern Bloc** countries and the rest of the world. About half of the years of our dataset are during the **East-West divide** where there were **two clear global trade blocks**.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This network shows just how **highly correlated** the evolution of GDP from one country to another is. Possibly the most obvious observation from this network graph is the clear distinction between **former Eastern Bloc** countries and the rest of the world. About half of the years of our dataset are during the **East-West divide** where there were **two clear global trade blocks**. Nevertheless, GPD **increased the same way** almost everywhere and the whole world is close to being a single big cluster. This can be explained by the fact that the **global economy is highly interlinked** and countries have **strong trading relations** to make the GDP evolve the same way. Global trade has been substantially increasing throughout the past decades. Today, almost all countries worldwide are part of the World Trade Organization, which makes sure that tariffs and other barriers to trade are reduced. 
 
 <div style="clear: left; width: 100%;"></div>
 
