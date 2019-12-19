@@ -1411,6 +1411,8 @@ TODO **TODO**
 
 ## Self-sufficency <a name="selfsufficiency"></a>
 
+The self-sufficiency score is created by analyzing how much a given country relies on external imports of food, compared to how much they can produce for themselves. We used the same features that were established as economically relevant and weighed them with their respective importance to find the **ideal self-sufficiency score**. 
+
 ### How is the self-suffiency score distributed for the selected features?
 
 <div style="float: right; width: 100%; margin: 5% 0% 5% 0%;"> 
@@ -1468,7 +1470,7 @@ TODO **TODO**
 </div>
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Unlike the production ranking, the self sufficiency score seems to be **pretty instable**. It is interesting to note that the countries which were by far **top producers do no stand out early on**. For instance China does not appear in the highest score until 1990. The most surprising results came from **African countries** such as South Africa, the United Republic of Tanzania, Nigeria and the Ivory Coast that constantly have a **score competing with the richest countries** which was unexpected. (***See import/export and production***). Even though the general trend tends to show that **richer countries are more independent**, there are **outliers** and the score seems to have a pretty **high variance**.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Unlike the production ranking, the self sufficiency score seems to be **rather unstable**. It is interesting to note that the countries which were by far **top producers do no stand out early on**. For instance China does not appear in the highest score until 1990. The most surprising results came from **African countries** such as South Africa, the United Republic of Tanzania, Nigeria and the Ivory Coast that constantly have a **score competing with the richest countries** which was unexpected. (***See import/export and production***). Even though the general trend tends to show that **richer countries are more independent**, there are **outliers** and the score seems to have a pretty **high variance**.
 
 ### -> Comparison with GDP??
 
