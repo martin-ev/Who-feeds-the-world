@@ -1414,7 +1414,7 @@ What other trends can we notice from the tradebalances? At first sight, it might
 
 
 
-### add Graph trend for pigs!
+### add Graph trend for pigs!?
 
 
 ## Self-sufficency <a name="selfsufficiency"></a>
@@ -1481,6 +1481,8 @@ $$\frac{Production \times 100}{Production + Imports – Exports}$$
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Unlike the production ranking, the self sufficiency score seems to be **rather unstable**. It is interesting to note that the countries which were by far **top producers do no stand out early on**. For instance China does not appear in the highest score until 1990. The most surprising results came from **African countries** such as South Africa, the United Republic of Tanzania, Nigeria and the Ivory Coast that constantly have a **score competing with the richest countries** which was unexpected. (***See import/export and production***). Even though the general trend tends to show that **richer countries are more independent**, there are **outliers** and the score seems to have a pretty **high variance**.
+
+### create and add bar plot with self sufficiency for aspec year and some countries?!
 
 ### -> Comparison with GDP??
 
