@@ -95,11 +95,9 @@ How to measure economic success? The first and most intuitive is to use the **Gr
 
 ### Which features are the most influential features on the Gross Domestic Product? 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Using a **knowledge** based method as well as a more **technical**,  data analysis algorithm, we were able to select specific features. However, as we expect the most influential goods to not only have high correlation with GDP, but to also be globally relevant in production volume, we narrowed down our possible choice of features.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Using a **knowledge** based method as well as a more **technical**,  data analysis algorithm, we were able to select specific features. However, as we expect the most influential goods to not only have high correlation with GDP, but to also be globally relevant in production volume, we narrowed down our possible choice of features. With all of this, our model managed to pick out some features that could optimize GDP. 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We find that the goods that most influenced the GDP are **soybeans, tomatoes, maize, wheat, cattle, live animals and pigs** amongst others. 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It is an interesting result that is easily understandable. Take **soybeans** for example. This crop is one of the **most produced** worldwide. The main exporters are the US, Brasil and Argentina and the main importer is China. Around **330 millions tonnes** of soybeans was produced in 2018. It is vastly used to **feed animals**. It is thus coherent to see such an important good be selected by our model. We also see that wheat, oats, cattle live and pigs are present. This again is easily understandable. It is sufficient to look at our **eating habit** to convince ourself that those goods plays an important role in GDP. Below is the full list of the selected features, sorted by order of importance attributed by the model:
+Below is the full list of the selected features, sorted by order of importance attributed by the model:
 
 - Maize, green Food export quantities tonnes
 - Tomatoes Food import quantities tonnes
@@ -116,7 +114,13 @@ How to measure economic success? The first and most intuitive is to use the **Gr
 
 
 
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It is an interesting result that is easily understandable. Take **soybeans** for example. This crop is one of the **most produced** worldwide. The main exporters are the US, Brasil and Argentina and the main importer is China. Around **330 millions tonnes** of soybeans were produced in 2018. It is vastly used to **feed animals**. It is thus coherent to see such an important good selected by our model. We also see that wheat, oats, cattle live and pigs are present. This again is easily understandable. It is sufficient to look at our **eating habits** to convince ourselves that those goods plays an important role in GDP. 
+
+
 ## Global production <a name="production"></a>
+Now we want to take a look at where those specific goods are actually produced and if we can derive specific conclusions from that.
 
 ### Which countries produce the features of interest?
 
@@ -1397,8 +1401,8 @@ document.getElementById("defaultOpenTrade").click();
 </script>  
 </div>
 
-TODO **TODO**
-
+Just as we've seen for the production, the trade balances of our features also follow some broader **trends**. Firstly, without even looking at the maps yet, but at the identified trade features, we see that many of them are directly or indirectly related to **animal products**. Imports of live pigs, turkeys and cattle are some of the highest on the list. Other than that, as we've already established, green maize as well as soybeans are mainly grown for **animal feed**. In addition to those, even oats, their primary use was for livestock feeding (70% of global production in 2009, according to the FAO). What about the others? Even though we might not think about these crops primarily as feeding stuff, regular **maize and wheat** are also significantly used for this purpose. They are indeed both major staple foods for people, but especially in developed countries, they are a major feedstuff. According to the FAO, in 2007 around 16% of global wheat production were used to feed animals, whereas this number was **42% for the EU**. 
+Globally, all features that we identified seem to **follow a common trend**. The **biggest producers** are in almost all categories **China, the USA and Brazil**. Russia, France, Spain, Germany seem to get closer to their volumes. The rest of Europe is situated in the second or third tier of producers as well as the other developed countries (Australia, Canada, south American countries). In the majority of categories, north and south African countries are situated in the same orders of magnitude as developed countries. A general trend to observe is that **central African countries seem to produce very few resources** in comparison to the rest of the world. The only feature going against this general description seems to be **cattle**. The production of cattle appears to be **very well distributed** throughout the world. The production of pigs also seems well distributed throughout the world except for countries excluding pork from their diet for religious purposes. The phenomenon might be explained by the increased difficulty in transporting these goods. Live animals and meat **transport is much more complicated** than grain, vegetables or forage. Meaning that the countries would generally **produce what they need** in terms of meat and rather import crops or vegetables.  
 ### evtl Graph production trend 1 developed country 1 other
 
 TODO **TODO**
