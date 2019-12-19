@@ -771,7 +771,9 @@ In this part, we want to pick out a few of the identified features and look at w
 }
 </style>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  We see that until the 80s no country in the world was a strong net exporter of green maize. It was barely even exported or imported in any country. Starting from the mid 80s the **United States** emerge as the main net exporter. During the 90s and into recent years, some more countries emerge that are net exporters, mainly in Europe. Globally, the United States stays the most important exporter of this agricultural product throughout the years, which is probably why our model identified it as the **strongest predictor of GDP**.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  We see that until the 80s no country in the world was a strong net exporter of green maize. It was barely even exported or imported in any country. Starting from the mid 80s the **United States** emerge as the main net exporter. During the 90s and into recent years, some more countries emerge that are net exporters, mainly in Europe. Globally, the United States stays the single most important exporter of this agricultural product throughout the years, which is probably why our model identified it as the **strongest predictor of GDP**.
+
+## ADD trend extracted from notebook?!
 
 ### Which countries are net importers of tomatoes?
 
@@ -828,6 +830,8 @@ In this part, we want to pick out a few of the identified features and look at w
 </style>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Being a tomato importer, but also a tomato producer seems to be a **good predictor of wealth for the state**. Tomatoes are one of the most **important vegetable crops produced worldwide**, only potatoes have a higher production. Looking through the timeline, we clearly see that almost all **highly industrialized nations are continuously importing tomatoes**. Especially the United States, France and Germany are importing large quantities each year. It's not a big surprise, since tomatoes are a **popular ingredient in many modern western recipes**, but **require a climate** that is not well suited for most of the United States or Northern Europe.
+
+## Add trend graph from notebook?!
 
 ### Who imports and exports the other features of interest ?
 
@@ -1401,17 +1405,18 @@ document.getElementById("defaultOpenTrade").click();
 </script>  
 </div>
 
-Just as we've seen for the production, the trade balances of our features also follow some broader **trends**. To start off, without even looking at the maps yet, but at the identified trade features, we see that many of them are directly or indirectly related to **animal products**. Imports of live pigs, turkeys and cattle are some of the highest on the list. Other than that, as we've already established, green maize as well as soybeans are mainly grown for **animal feed**. In addition to those, even for **oats**, the primary use was for livestock feeding (**70% of global production** in 2009, according to the FAO). What about the others? Even though we might not think about these crops primarily as feeding stuff, regular **maize and wheat** are also significantly used for this purpose. They are indeed both major staple foods for people, but especially in developed countries, they are also a major feedstuff. According to the FAO, in 2007 around 16% of global wheat production was used to feed animals, whereas this number was **42% for the EU**. What other trends can we notice from the tradebalances? At first sight, it might seem that for most of the features, some of the biggest global economies have inconsistent trade balances and thus it is surprising we find any correlations. Lets take pigs as an example: in 1998 France was one of the most important exporters of live pigs, whereas in 1999 it was suddenly one of the most important importers. From 2007 to 2008 we see an equally big shift for Spain. Nevertheless, this leads to an interesting observation: even though developed countries are being rather consistent in the directions of their trade balance, they still tend to stay among the highest absolute trading countries. 
+Just as we've seen for the production, the trade balances of our features also follow some broader **trends**. To start off, without even looking at the maps yet, but at the identified trade features, we see that many of them are directly or indirectly related to **animal products**. Imports of live pigs, turkeys and cattle are some of the highest on the list. Other than that, as we've already established, green maize as well as soybeans are mainly grown for **animal feed**. In addition to those, even for **oats**, the primary use was for livestock feeding (**70% of global production** in 2009, according to the FAO). What about the others? Even though we might not think about these crops primarily as feeding stuff, regular **maize and wheat** are also significantly used for this purpose. They are indeed both major staple foods for people, but especially in developed countries, they are also a major feedstuff. According to the FAO, in 2007 around 16% of global wheat production was used to feed animals, whereas this number was **42% for the EU**. What other trends can we notice from the tradebalances? At first sight, it might seem that for most of the features, some of the biggest global economies have inconsistent trade balances and thus it is surprising we find any correlations. Lets take pigs as an example: in 1998 France was one of the most important exporters of live pigs, whereas in 1999 it was suddenly one of the most important importers. From 2007 to 2008 we see an equally big shift for Spain. Nevertheless, this leads to an interesting observation: even though developed countries are not being consistent in the directions of their trade balance, they still tend to stay among the highest absolute trading countries. 
 
 
 
-### evtl Graph production trend 1 developed country 1 other
+### add Graph trend for example cattle
 
-TODO **TODO**
 
 ## Self-sufficency <a name="selfsufficiency"></a>
 
-The self-sufficiency score is created by analyzing how much a given country relies on external imports of food, compared to how much they can produce for themselves. We used the same features that were established as economically relevant and weighed them with their respective importance to find the **ideal self-sufficiency score**. 
+The self-sufficiency score is created by analyzing how much a given country **relies on external imports** of food, compared to how much they can produce for themselves. As input, we used the same features that were established as economically relevant and weighed them with their respective importance to find the **ideal self-sufficiency score**. 
+
+$$\frac{Production \times 100}{Production + Imports – Exports}$$
 
 ### How is the self-suffiency score distributed for the selected features?
 
