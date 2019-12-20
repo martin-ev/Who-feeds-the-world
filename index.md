@@ -1433,7 +1433,7 @@ document.getElementById("defaultOpenTrade").click();
 
 ## Self-sufficiency <a name="selfsufficiency"></a>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The self-sufficiency score is created by analyzing how much a given country **relies on external imports** of food, compared to how much they can produce for themselves. As input, we used the same features that were established as economically relevant and weighed them with their respective importance to find the **ideal self-sufficiency score**. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We identified agricultural features as markers of economical growth, we identified the producers as well as the traders for these features. We now want to look which countries are the most indenpendant regarding these very features. To do so, we calculated the self-sufficiency score defined by the **fraction of its consumption that each country is able to produce**. 
 
 $$\frac{Production \times 100}{Production + Imports – Exports}$$
 
