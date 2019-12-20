@@ -696,11 +696,6 @@ document.getElementById("defaultOpenProd").click();
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Globally, all features that we identified seem to **follow a common trend**. The **biggest producers** are in almost all categories **China, the USA and Brazil**. Russia, France, Spain, Germany seem to get closer to their volumes. The rest of Europe is situated in the second or third tier of producers as well as the other developed countries (Australia, Canada, south American countries). In most categories, north and south African countries are situated in the same orders of magnitude as developed countries. A general trend to observe is that **central African countries seem to produce very few resources** in comparison to the rest of the world. The only feature going against this general description seems to be **cattle**. The production of cattle appears to be **very well distributed** throughout the world. The production of pigs also seems well distributed throughout the world except for countries excluding pork from their diet for religious purposes. The phenomenon might be explained by the increased difficulty in transporting these goods. **Live animals and meat transport are much more complicated** than grain, vegetables or forage. Meaning that the countries would generally **produce what they need** in terms of meat and rather import crops or vegetables.  
 
-<div style="float: left; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/barplotcattleprod.html"></div>
-
-<div style="clear: left; width: 100%;"></div>
-
-
 ### Are big producers wealthier? 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The general trend we observe is that **developed countries are bigger producers**. This makes sense considering how we selected these features. Our regression model gives us the features that **relate to a high GDP** thus the features selected will be markers of rich countries. 
@@ -849,9 +844,7 @@ document.getElementById("defaultOpenProd").click();
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Just as we've seen for the production, the trade balances of our features also follow some broader **trends**. To start off, without even looking at the maps yet, but at the identified trade features, we see that many of them are directly or indirectly related to **animal products**. Imports of live pigs, turkeys and cattle are some of the highest on the list. Other than that, as we've already established, green maize as well as soybeans are mainly grown for **animal feed**. In addition to those, even for **oats**, the primary use was for livestock feeding (**70% of global production** in 2009, according to the FAO). What about the others? Even though we might not think about these crops primarily as feeding stuff, regular **maize and wheat** are also significantly used for this purpose. They are indeed both major staple foods for people, but especially in developed countries, they are also a major feedstuff. According to the FAO, in 2007 around 16% of global **wheat production** was used to feed animals, whereas this number was **42% for the EU**.
 
-
-
-### Live animals on ships?
+### Sheep on ships?
 
 <div style="float: left; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/shippingcontainer.html"></div>
 
@@ -1433,8 +1426,6 @@ document.getElementById("defaultOpenTrade").click();
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What other trends can we notice from the trade balances? At first sight, it might seem that for most of the features, some of the biggest global economies have **inconsistent trade balances** and thus it is surprising we can find correlations at all. Let's take pigs as an example: in 1998 France was one of the most important exporters of live pigs, whereas in 1999 it was suddenly one of the most important importers. From 2007 to 2008, we see an equally big shift for Spain. Nevertheless, this leads to an interesting observation: even though developed countries are not being consistent in the directions of their trade balance, they still tend to stay among the **most trading countries by volume**. 
 
-<div style="float: right; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/pigtradebalance.html"></div>
-
 ## Self-sufficiency <a name="selfsufficiency"></a>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The self-sufficiency score is created by analyzing how much a given country **relies on external imports** of food, compared to how much they can produce for themselves. As input, we used the same features that were established as economically relevant and weighed them with their respective importance to find the **ideal self-sufficiency score**. 
@@ -1499,16 +1490,6 @@ $$\frac{Production \times 100}{Production + Imports – Exports}$$
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Unlike the production ranking, the self-sufficiency score seems to be **rather unstable**. It is interesting to note that the countries which were by far **top producers do no stand out early on**. For instance, China does not appear in the highest score until 1990. The most surprising results came from **African countries** such as South Africa, the United Republic of Tanzania, Nigeria and the Ivory Coast that constantly have a **score competing with the richest countries** which was unexpected. (***See import/export and production***). Even though the general trend tends to show that **richer countries are more independent**, there are **outliers** and the score seems to have a pretty **high variance**.
-
-### create and add bar plot with self sufficiency for aspec year and some countries?!
-
-### -> Comparison with GDP??
-
-TODO **TODO**
-
-### Link with exporters??
-
-TODO **TODO**
 
 ## Conclusion <a name="conclusion"></a>
 
