@@ -86,13 +86,13 @@
 
 ## About the dataset <a name="dataset"></a>
 
-The data that we use for analysis comes from the **"Global Food & Agriculture Statistic"**. It is a dataset by the **Food and Agriculture Organization of the United Nations** and includes extensive information about many factors related to agriculture, such as production output, food prices, trade balances and environmental impacts among others. It includes countrywise yearly values from 1970 to 2015. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The data that we use for analysis comes from the **"Global Food & Agriculture Statistic"**. It is a dataset by the **Food and Agriculture Organization of the United Nations** and includes extensive information about many factors related to agriculture, such as production output, food prices, trade balances and environmental impacts among others. It includes countrywise yearly values from 1970 to 2015. 
 
 ## Our approach
 
 <div style="float: right; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/inflationrates.html"></div>
 
-How to measure economic success? The first and most intuitive is to use the **Gross Domestic Product** of countries. The second approach we took was **price stability**, expressed in low levels of inflation and thus small changes in the **Consumer Price Index**. Can we create a model that will tell us which products to produce and which to trade to **maximize for GDP** or **minimize for inflation**? As it turned out, price stability did not yield significant correlations to any production or trade. GDP however did... 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How to measure economic success? The first and most intuitive is to use the **Gross Domestic Product** of countries. The second approach we took was **price stability**, expressed in low levels of inflation and thus small changes in the **Consumer Price Index**. Can we create a model that will tell us which products to produce and which to trade to **maximize for GDP** or **minimize for inflation**? As it turned out, price stability did not yield significant correlations to any production or trade. GDP however did... 
 
 <div style="clear: right; width: 100%;"></div>
 
@@ -116,10 +116,6 @@ Below is the full list of the selected features, sorted by order of importance a
 - Wheat Food export quantities tonnes
 - Turkeys Livestock production Head
 - Maize Food export quantities tonnes
-
-
-
-
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It is an interesting result that is easily understandable. Take **soybeans** for example. This crop is one of the **most produced** worldwide. The main exporters are the US, Brasil and Argentina and the main importer is China. Around **330 millions tonnes** of soybeans were produced in 2018. It is vastly used to **feed animals**. It is thus coherent to see such an important good selected by our model. We also see that wheat, oats, cattle live and pigs are present. This again is easily understandable. It is sufficient to look at our **eating habits** to convince ourselves that those goods plays an important role in GDP. Now that we've established which agricultural production and trade features are best at predicting a high GDP, we want to look further into which countries produce and trade them and try to derive further conclusions from that. 
 
@@ -716,7 +712,7 @@ document.getElementById("defaultOpenProd").click();
 
 ## Global Trade Balances <a name="balances"></a>
 
-In this part, we want to pick out a few of the identified features and look at where in the world they are most exported from and imported to. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In this part, we want to pick out a few of the identified features and look at where in the world they are most exported from and imported to. 
 
 ### What is green maize?
 
@@ -848,7 +844,7 @@ In this part, we want to pick out a few of the identified features and look at w
 
 ### What can we say about the other trade features of interest?
 
-Just as we've seen for the production, the trade balances of our features also follow some broader **trends**. To start off, without even looking at the maps yet, but at the identified trade features, we see that many of them are directly or indirectly related to **animal products**. Imports of live pigs, turkeys and cattle are some of the highest on the list. Other than that, as we've already established, green maize as well as soybeans are mainly grown for **animal feed**. In addition to those, even for **oats**, the primary use was for livestock feeding (**70% of global production** in 2009, according to the FAO). What about the others? Even though we might not think about these crops primarily as feeding stuff, regular **maize and wheat** are also significantly used for this purpose. They are indeed both major staple foods for people, but especially in developed countries, they are also a major feedstuff. According to the FAO, in 2007 around 16% of global **wheat production** was used to feed animals, whereas this number was **42% for the EU**.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Just as we've seen for the production, the trade balances of our features also follow some broader **trends**. To start off, without even looking at the maps yet, but at the identified trade features, we see that many of them are directly or indirectly related to **animal products**. Imports of live pigs, turkeys and cattle are some of the highest on the list. Other than that, as we've already established, green maize as well as soybeans are mainly grown for **animal feed**. In addition to those, even for **oats**, the primary use was for livestock feeding (**70% of global production** in 2009, according to the FAO). What about the others? Even though we might not think about these crops primarily as feeding stuff, regular **maize and wheat** are also significantly used for this purpose. They are indeed both major staple foods for people, but especially in developed countries, they are also a major feedstuff. According to the FAO, in 2007 around 16% of global **wheat production** was used to feed animals, whereas this number was **42% for the EU**.
 
 
 
@@ -856,7 +852,7 @@ Just as we've seen for the production, the trade balances of our features also f
 
 <div style="float: left; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/shippingcontainer.html"></div>
 
-Even though many **animal rights activists** are strongly campaigning against it, **millions of live animals** are being transported in gruesome conditions around the world every year. Their final destination is usually the slaughterhouse. When countries income level rises, the **demand for meat** increases with it. Meat consumption is regarded as a symbol of wealth across cultures. The economic benefits of transporting the animals alive is twofold: on one hand, the costs are reduced, since the it is more **expensive to keep the meat frozen** during transport and on the other hand, consumers usually prefer their meat as fresh as possible. The live trade industry is booming so it's no surprise that many of the strongest features identified by our model come from it. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Even though many **animal rights activists** are strongly campaigning against it, **millions of live animals** are being transported in gruesome conditions around the world every year. Their final destination is usually the slaughterhouse. When countries income level rises, the **demand for meat** increases with it. Meat consumption is regarded as a symbol of wealth across cultures. The economic benefits of transporting the animals alive is twofold: on one hand, the costs are reduced, since the it is more **expensive to keep the meat frozen** during transport and on the other hand, consumers usually prefer their meat as fresh as possible. The live trade industry is booming so it's no surprise that many of the strongest features identified by our model come from it. 
 
 <div style="clear: left; width: 100%;"></div>
 
@@ -1432,13 +1428,13 @@ document.getElementById("defaultOpenTrade").click();
 </script>  
 </div>
 
-What other trends can we notice from the trade balances? At first sight, it might seem that for most of the features, some of the biggest global economies have **inconsistent trade balances** and thus it is surprising we can find correlations at all. Lets take pigs as an example: in 1998 France was one of the most important exporters of live pigs, whereas in 1999 it was suddenly one of the most important importers. From 2007 to 2008, we see an equally big shift for Spain. Nevertheless, this leads to an interesting observation: even though developed countries are not being consistent in the directions of their trade balance, they still tend to stay among the **most trading countries by volume**. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What other trends can we notice from the trade balances? At first sight, it might seem that for most of the features, some of the biggest global economies have **inconsistent trade balances** and thus it is surprising we can find correlations at all. Lets take pigs as an example: in 1998 France was one of the most important exporters of live pigs, whereas in 1999 it was suddenly one of the most important importers. From 2007 to 2008, we see an equally big shift for Spain. Nevertheless, this leads to an interesting observation: even though developed countries are not being consistent in the directions of their trade balance, they still tend to stay among the **most trading countries by volume**. 
 
 <div style="float: right; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/pigtradebalance.html"></div>
 
 ## Self-sufficency <a name="selfsufficiency"></a>
 
-The self-sufficiency score is created by analyzing how much a given country **relies on external imports** of food, compared to how much they can produce for themselves. As input, we used the same features that were established as economically relevant and weighed them with their respective importance to find the **ideal self-sufficiency score**. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The self-sufficiency score is created by analyzing how much a given country **relies on external imports** of food, compared to how much they can produce for themselves. As input, we used the same features that were established as economically relevant and weighed them with their respective importance to find the **ideal self-sufficiency score**. 
 
 $$\frac{Production \times 100}{Production + Imports – Exports}$$
 
@@ -1516,7 +1512,5 @@ TODO **TODO**
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **China, USA, Brazil**. These are the countries that feed the world. They are the biggest producers in almost all categories. 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We observe a **strong correlation between wealth and production in general**. There is probably also a **mutual causality** between the two observations, meaning that the more you produce the wealthier you are and the wealthier you are then the more you can produce. But more interestingly, we also observe that the amount of **agricultural trade** a country engages in has an even higher positive impact on their GDP. Most of the features selected are about trade: whether its about exporting maize or importing tomatoes, being an important part of the **global interconnected economy** turns out to be postive for economic growth. In light of recent trends by especially the US to become more sceptical of global trade, it could be relevant to keep in mind what consequences might come from this. 
-
-
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Another important conclusion we make is the prominent role of **animal agriculture**. The highest valued feature is **green maize**, which is only used to **feed animals**. Many other features are **live animal imports** and or otherwise linked to crops, which are to a significant extent raised for animal food as well. It takes a lot more land, energy and ressources to produce food from animals, so it makes sense that mostly richer countries are able to afford having a diet with many animal products. 
