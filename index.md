@@ -94,6 +94,8 @@ The data that we use for analysis comes from the **"Global Food & Agriculture St
 
 How to measure economic success? The first and most intuitive is to use the **Gross Domestic Product** of countries. The second approach we took was **price stability**, expressed in low levels of inflation and thus small changes in the **Consumer Price Index**. Can we create a model that will tell us which products to produce and which to trade to **maximize for GDP** or **minimize for inflation**? As it turned out, price stability did not yield significant correlations to any production or trade. GDP however did... 
 
+<div style="clear: right; width: 100%;"></div>
+
 ## Most important agricultural and economical features <a name="features"></a>
 
 ### Which features are the most influential features on the Gross Domestic Product? 
@@ -698,7 +700,9 @@ document.getElementById("defaultOpenProd").click();
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Globally, all features that we identified seem to **follow a common trend**. The **biggest producers** are in almost all categories **China, the USA and Brazil**. Russia, France, Spain, Germany seem to get closer to their volumes. The rest of Europe is situated in the second or third tier of producers as well as the other developed countries (Australia, Canada, south American countries). In the majority of categories, north and south African countries are situated in the same orders of magnitude as developed countries. A general trend to observe is that **central African countries seem to produce very few resources** in comparison to the rest of the world. The only feature going against this general description seems to be **cattle**. The production of cattle appears to be **very well distributed** throughout the world. The production of pigs also seems well distributed throughout the world except for countries excluding pork from their diet for religious purposes. The phenomenon might be explained by the increased difficulty in transporting these goods. Live animals and meat **transport is much more complicated** than grain, vegetables or forage. Meaning that the countries would generally **produce what they need** in terms of meat and rather import crops or vegetables.  
 
-<div style="float: right; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/barplotcattleprod.html"></div>
+<div style="float: left; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/barplotcattleprod.html"></div>
+
+<div style="clear: left; width: 100%;"></div>
 
 
 ### Are big producers wealthier? 
@@ -776,9 +780,11 @@ In this part, we want to pick out a few of the identified features and look at w
 }
 </style>
 
+<div style="float: right; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/maizenettrade.html"></div>
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  We see that until the 80s no country in the world was a strong net exporter of green maize. It was barely even exported or imported in any country. Starting from the mid 80s the **United States** emerge as the main net exporter. During the 90s and into recent years, some more countries emerge that are net exporters, mainly in Europe. Globally, the United States stays the single most important exporter of this agricultural product throughout the years, which is probably why our model identified it as the **strongest predictor of GDP**.
 
-<div style="float: right; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/maizeimports.html"></div>
+<div style="clear: right; width: 100%;"></div>
 
 ### Which countries are net importers of tomatoes?
 
@@ -840,15 +846,18 @@ In this part, we want to pick out a few of the identified features and look at w
 
 
 ### What can we say about the other trade features of interest?
+
 Just as we've seen for the production, the trade balances of our features also follow some broader **trends**. To start off, without even looking at the maps yet, but at the identified trade features, we see that many of them are directly or indirectly related to **animal products**. Imports of live pigs, turkeys and cattle are some of the highest on the list. Other than that, as we've already established, green maize as well as soybeans are mainly grown for **animal feed**. In addition to those, even for **oats**, the primary use was for livestock feeding (**70% of global production** in 2009, according to the FAO). What about the others? Even though we might not think about these crops primarily as feeding stuff, regular **maize and wheat** are also significantly used for this purpose. They are indeed both major staple foods for people, but especially in developed countries, they are also a major feedstuff. According to the FAO, in 2007 around 16% of global **wheat production** was used to feed animals, whereas this number was **42% for the EU**.
 
 
 
 ### Live animals on ships?
 
-<div style="float: right; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/shippingcontainer.html"></div>
+<div style="float: left; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/shippingcontainer.html"></div>
 
 Even though many **animal rights activists** are strongly campaigning against it, **millions of live animals** are being transported in gruesome conditions around the world every year. Their final destination is usually the slaughterhouse. When countries income level rises, the **demand for meat** increases with it. Meat consumption is regarded as a symbol of wealth across cultures. The economic benefits of transporting the animals alive is twofold: on one hand, the costs are reduced, since the it is more **expensive to keep the meat frozen** during transport and on the other hand, consumers usually prefer their meat as fresh as possible. The live trade industry is booming so it's no surprise that many of the strongest features identified by our model come from it. 
+
+<div style="clear: left; width: 100%;"></div>
 
 ### Who imports and exports them?
 
