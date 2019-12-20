@@ -4,7 +4,7 @@
 
 <div style="float: right; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/wordcloud2.html"></div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Since the Neolithic Revolution, agriculture **feeds the world's population**. Even today, the agricultural sector **employs a large part of humanity** and is a **major part of the economy** of developed and developing countries. In the history of mankind, the **economic growth of countries** has almost always been accompanied by the development of agriculture and the **agricultural economy**, *i.e.* **production, imports and exports**. In this data story we want to explore different links between the agriculture and the economic success of countries. Which crops are produced and which animals are traded by richer countries? Do they tend to be net exporters or importers of food? Do they tend to be self-sufficient? We try to answer all of these questions and show many interesting insights along the way.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Since the Neolithic Revolution, agriculture **feeds the world's population**. Even today, the agricultural sector **employs a large part of humanity** and is a **major part of the economy** of developed and developing countries. In the history of mankind, the **economic growth of countries** has almost always been accompanied by the development of agriculture and the **agricultural economy**, *i.e.* **production, imports and exports**. In this data story we want to explore different links between the agriculture and the economic success of countries. Which crops are produced, and which animals are traded by richer countries? Do they tend to be net exporters or importers of food? Do they tend to be self-sufficient? We try to answer all these questions and show many interesting insights along the way.
 
 <div style="clear: right; width: 100%;"></div>
 
@@ -12,7 +12,7 @@
 
 <div style="float: left; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/ussrdiss.html"></div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To be able to properly understand the studied data, we have to first look at the historical context of the period we are analyzing. There was the **Cold war** from 1945 to 1990 between the two **economic superpowers** (USA and USSR). The USSR was then dissolved in 1991. The Japanese economic miracle occured from 1945 to 1990 and allowed Japan to come out of the disastrous state in which it was at the exit of WW2 and become one of the worlds largest economies. There have been 2 big oil crises, in 1973 and 1979. There have also been many wars (Middle East wars 1973-2000 e.g. Yom Kippur War 1973, Islamic Revolution in Iran 1979, Iran–Iraq war 1980-1988, Gulf war 1990-1991, Yugoslav wars 1991-2001...). The **third Agricultural Revolution** (also known as Green revolution) occured form 1960 to 1990 and improved agricultural productions thanks to fertilizers and chemicals.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To be able to properly understand the studied data, we must first look at the historical context of the period we are analyzing. There was the **Cold war** from 1945 to 1990 between the two **economic superpowers** (USA and USSR). The USSR was then dissolved in 1991. The Japanese economic miracle occurred from 1945 to 1990 and allowed Japan to come out of the disastrous state in which it was at the exit of WW2 and become one of the world's largest economies. There have been 2 big oil crises, in 1973 and 1979. There have also been many wars (Middle East wars 1973-2000 e.g. Yom Kippur War 1973, Islamic Revolution in Iran 1979, Iran–Iraq war 1980-1988, Gulf war 1990-1991, Yugoslav wars 1991-2001...). The **third Agricultural Revolution** (also known as Green revolution) occurred from 1960 to 1990 and improved agricultural productions thanks to fertilizers and chemicals.
 
 <div style="clear: left; width: 100%;"></div>
 
@@ -80,13 +80,13 @@
 
 <div style="float: left; width: 100%; margin: 5% 0% 5% 0%;" w3-include-html="plots/clusters.html"></div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This network shows just how **highly correlated** the evolution of GDP from one country to another is. Possibly the most obvious observation from this network graph is the clear distinction between **former Eastern Bloc** countries and the rest of the world. About half of the years of our dataset are during the **East-West divide** where there were **two clear global trade blocks**. Nevertheless, GPD **increased the same way** almost everywhere and the whole world is close to being a single big cluster. This can be explained by the fact that the **global economy is highly interlinked** and countries have **strong trading relations** which leads to the GDP evolving the same way. Global trade and thus interdependence has been continuously increasing throughout the past decades. There are many institutions put into place for this to be possible. Today, almost all countries worldwide are part of the **World Trade Organization**, which makes sure that tariffs and other barriers to trade are reduced. In the past years, we've also seen that many countries, especially the **United States**, are becoming increasingly more **sceptical of global trade** and even engage in **trade wars**. What kind of impacts could this have on the future of **international trade**? 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This network shows just how **highly correlated** the evolution of GDP from one country to another is. Possibly the most obvious observation from this network graph is the clear distinction between **former Eastern Bloc** countries and the rest of the world. About half of the years of our dataset are during the **East-West divide** where there were **two clear global trade blocks**. Nevertheless, GPD **increased the same way** almost everywhere and the whole world is close to be a single big cluster. This can be explained by the fact that the **global economy is highly interlinked**, and countries have **strong trading relations** which leads to the GDP evolving the same way. Global trade and thus interdependence have been continuously increasing throughout the past decades. There are many institutions put into place for this to be possible. Today, almost all countries worldwide are part of the **World Trade Organization**, which makes sure that tariffs and other barriers to trade are reduced. In the past years, we've also seen that many countries, especially the **United States**, are becoming increasingly more **skeptical of global trade** and even engage in **trade wars**. What kind of impacts could this have on the future of **international trade**? 
 
 <div style="clear: left; width: 100%;"></div>
 
 ## About the dataset <a name="dataset"></a>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The data that we use for analysis comes from the **"Global Food & Agriculture Statistic"**. It is a dataset by the **Food and Agriculture Organization of the United Nations** and includes extensive information about many factors related to agriculture, such as production output, food prices, trade balances and environmental impacts among others. It includes countrywise yearly values from 1970 to 2015. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The data that we use for analysis comes from the **"Global Food & Agriculture Statistic"**. It is a dataset by the **Food and Agriculture Organization of the United Nations** and includes extensive information about many factors related to agriculture, such as production output, food prices, trade balances and environmental impacts among others. It includes country-wise yearly values from 1970 to 2015. 
 
 ## Our approach
 
@@ -100,7 +100,7 @@
 
 ### Which features are the most influential features on the Gross Domestic Product? 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Using a **knowledge** based method as well as a more **technical**,  data analysis algorithm, we were able to select specific features. However, as we expect the most influential goods to not only have high correlation with GDP, but to also be globally relevant in production volume, we narrowed down our possible choice of features. With all of this, our model managed to pick out some features that could optimize GDP. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Using a **knowledge**-based method as well as a more **technical**,  data analysis algorithm, we were able to select specific features. However, as we expect the most influential goods to not only have high correlation with GDP, but to also be globally relevant in production volume, we narrowed down our possible choice of features. With all of this, our model managed to pick out some features that could optimize GDP. 
 
 Below is the full list of the selected features, sorted by order of importance attributed by the model:
 
@@ -117,7 +117,7 @@ Below is the full list of the selected features, sorted by order of importance a
 - Turkeys Livestock production Head
 - Maize Food export quantities tonnes
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It is an interesting result that is easily understandable. Take **soybeans** for example. This crop is one of the **most produced** worldwide. The main exporters are the US, Brasil and Argentina and the main importer is China. Around **330 millions tonnes** of soybeans were produced in 2018. It is vastly used to **feed animals**. It is thus coherent to see such an important good selected by our model. We also see that wheat, oats, cattle live and pigs are present. This again is easily understandable. It is sufficient to look at our **eating habits** to convince ourselves that those goods plays an important role in GDP. Now that we've established which agricultural production and trade features are best at predicting a high GDP, we want to look further into which countries produce and trade them and try to derive further conclusions from that. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It is an interesting result that is easily understandable. Take **soybeans** for example. This crop is one of the **most produced** worldwide. The main exporters are the US, Brazil and Argentina and the main importer is China. Around **330 million tonnes** of soybeans were produced in 2018. It is vastly used to **feed animals**. It is thus coherent to see such an important good selected by our model. We also see that wheat, oats, cattle live, and pigs are present. This again is easily understandable. It is sufficient to look at our **eating habits** to convince ourselves that those goods play an important role in GDP. Now that we've established which agricultural production and trade features are best at predicting a high GDP, we want to look further into which countries produce and trade them and try to derive further conclusions from that. 
 
 
 ## Global production <a name="production"></a>
@@ -694,7 +694,7 @@ document.getElementById("defaultOpenProd").click();
 </script>  
 </div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Globally, all features that we identified seem to **follow a common trend**. The **biggest producers** are in almost all categories **China, the USA and Brazil**. Russia, France, Spain, Germany seem to get closer to their volumes. The rest of Europe is situated in the second or third tier of producers as well as the other developed countries (Australia, Canada, south American countries). In the majority of categories, north and south African countries are situated in the same orders of magnitude as developed countries. A general trend to observe is that **central African countries seem to produce very few resources** in comparison to the rest of the world. The only feature going against this general description seems to be **cattle**. The production of cattle appears to be **very well distributed** throughout the world. The production of pigs also seems well distributed throughout the world except for countries excluding pork from their diet for religious purposes. The phenomenon might be explained by the increased difficulty in transporting these goods. Live animals and meat **transport is much more complicated** than grain, vegetables or forage. Meaning that the countries would generally **produce what they need** in terms of meat and rather import crops or vegetables.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Globally, all features that we identified seem to **follow a common trend**. The **biggest producers** are in almost all categories **China, the USA and Brazil**. Russia, France, Spain, Germany seem to get closer to their volumes. The rest of Europe is situated in the second or third tier of producers as well as the other developed countries (Australia, Canada, south American countries). In most categories, north and south African countries are situated in the same orders of magnitude as developed countries. A general trend to observe is that **central African countries seem to produce very few resources** in comparison to the rest of the world. The only feature going against this general description seems to be **cattle**. The production of cattle appears to be **very well distributed** throughout the world. The production of pigs also seems well distributed throughout the world except for countries excluding pork from their diet for religious purposes. The phenomenon might be explained by the increased difficulty in transporting these goods. **Live animals and meat transport are much more complicated** than grain, vegetables or forage. Meaning that the countries would generally **produce what they need** in terms of meat and rather import crops or vegetables.  
 
 <div style="float: left; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/barplotcattleprod.html"></div>
 
@@ -703,7 +703,7 @@ document.getElementById("defaultOpenProd").click();
 
 ### Are big producers wealthier? 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The general trend we observe is that **developed countries are bigger producers**. This makes sense considering how we selected these features. Our regression model gives us the features that are **connected with a high GDP** thus the features selected will be markers of rich countries. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The general trend we observe is that **developed countries are bigger producers**. This makes sense considering how we selected these features. Our regression model gives us the features that **relate to a high GDP** thus the features selected will be markers of rich countries. 
 
 
 ### Is the production of important items stable? 
@@ -781,7 +781,7 @@ document.getElementById("defaultOpenProd").click();
 
 <div style="float: right; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/greenmaizenettrade.html"></div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  We see that until the 80s no country in the world was a strong net exporter of green maize. It was barely even exported or imported in any country. Starting from the mid 80s the **United States** emerge as the main net exporter. During the 90s and into recent years, some more countries emerge that are net exporters, mainly in Europe. Globally, the United States stays the single most important exporter of this agricultural product throughout the years, which is probably why our model identified it as the **strongest predictor of GDP**.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  We see that until the 80s no country in the world was a strong net exporter of green maize. It was barely even exported or imported in any country. Starting from the mid-80s the **United States** emerge as the main net exporter. During the 90s and into recent years, some more countries emerge that are net exporters, mainly in Europe. Globally, the United States stays the single most important exporter of this agricultural product throughout the years, which is probably why our model identified it as the **strongest predictor of GDP**.
 
 <div style="clear: right; width: 100%;"></div>
 
@@ -841,7 +841,7 @@ document.getElementById("defaultOpenProd").click();
 
 <div style="float: right; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/tomatoesnettrade.html"></div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Being a tomato importer, but also a tomato producer seems to be a **good predictor of wealth for the state**. Tomatoes are one of the most **important vegetable crops produced worldwide**, only potatoes have a higher production. Looking through the timeline, we clearly see that almost all **highly industrialized nations are continuously importing tomatoes**. Especially the United States, France and Germany are importing large quantities each year. It's not a big surprise, since tomatoes are a **popular ingredient in many modern western recipes**, but **require a climate** that is not well suited for most of the United States or Northern Europe.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Being a tomato importer, but also a tomato producer seems to be a **good predictor of wealth for the state**. Tomatoes are one of the most **important vegetable crops produced worldwide**, only potatoes have a higher production. Looking through the timeline, we clearly see that almost all **highly industrialized nations are continuously importing tomatoes**. Especially the United States, France and Germany are importing large quantities each year. It's not a big surprise, since tomatoes are a **popular ingredient in many modern western recipes** but **require a climate** that is not well suited for most of the United States or Northern Europe.
 
 <div style="clear: right; width: 100%;"></div>
 
@@ -855,7 +855,7 @@ document.getElementById("defaultOpenProd").click();
 
 <div style="float: left; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/shippingcontainer.html"></div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Even though many **animal rights activists** are strongly campaigning against it, **millions of live animals** are being transported in gruesome conditions around the world every year. Their final destination is usually the slaughterhouse. When countries income level rises, the **demand for meat** increases with it. Meat consumption is regarded as a symbol of wealth across cultures. The economic benefits of transporting the animals alive is twofold: on one hand, the costs are reduced, since the it is more **expensive to keep the meat frozen** during transport and on the other hand, consumers usually prefer their meat as fresh as possible. The live trade industry is booming so it's no surprise that many of the strongest features identified by our model come from it. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Even though many **animal rights activists** are strongly campaigning against it, **millions of live animals** are being transported in gruesome conditions around the world every year. Their destination is usually the slaughterhouse. When countries income level rises, the **demand for meat** increases with it. Meat consumption is regarded as a symbol of wealth across cultures. The economic benefits of transporting the animals alive is twofold: on one hand, the costs are reduced, since the it is more **expensive to keep the meat frozen** during transport and on the other hand, consumers usually prefer their meat as fresh as possible. The live trade industry is booming so it's no surprise that many of the strongest features identified by our model come from it. 
 
 <div style="clear: left; width: 100%;"></div>
 
@@ -1431,17 +1431,17 @@ document.getElementById("defaultOpenTrade").click();
 </script>  
 </div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What other trends can we notice from the trade balances? At first sight, it might seem that for most of the features, some of the biggest global economies have **inconsistent trade balances** and thus it is surprising we can find correlations at all. Lets take pigs as an example: in 1998 France was one of the most important exporters of live pigs, whereas in 1999 it was suddenly one of the most important importers. From 2007 to 2008, we see an equally big shift for Spain. Nevertheless, this leads to an interesting observation: even though developed countries are not being consistent in the directions of their trade balance, they still tend to stay among the **most trading countries by volume**. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What other trends can we notice from the trade balances? At first sight, it might seem that for most of the features, some of the biggest global economies have **inconsistent trade balances** and thus it is surprising we can find correlations at all. Let's take pigs as an example: in 1998 France was one of the most important exporters of live pigs, whereas in 1999 it was suddenly one of the most important importers. From 2007 to 2008, we see an equally big shift for Spain. Nevertheless, this leads to an interesting observation: even though developed countries are not being consistent in the directions of their trade balance, they still tend to stay among the **most trading countries by volume**. 
 
 <div style="float: right; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/pigtradebalance.html"></div>
 
-## Self-sufficency <a name="selfsufficiency"></a>
+## Self-sufficiency <a name="selfsufficiency"></a>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The self-sufficiency score is created by analyzing how much a given country **relies on external imports** of food, compared to how much they can produce for themselves. As input, we used the same features that were established as economically relevant and weighed them with their respective importance to find the **ideal self-sufficiency score**. 
 
 $$\frac{Production \times 100}{Production + Imports – Exports}$$
 
-### How is the self-suffiency score distributed for the selected features?
+### How is the self-sufficiency score distributed for the selected features?
 
 <div style="float: right; width: 100%; margin: 5% 0% 5% 0%;"> 
   <div class="slidecontainerSelfSuffiency">
@@ -1498,7 +1498,7 @@ $$\frac{Production \times 100}{Production + Imports – Exports}$$
 </div>
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Unlike the production ranking, the self sufficiency score seems to be **rather unstable**. It is interesting to note that the countries which were by far **top producers do no stand out early on**. For instance China does not appear in the highest score until 1990. The most surprising results came from **African countries** such as South Africa, the United Republic of Tanzania, Nigeria and the Ivory Coast that constantly have a **score competing with the richest countries** which was unexpected. (***See import/export and production***). Even though the general trend tends to show that **richer countries are more independent**, there are **outliers** and the score seems to have a pretty **high variance**.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Unlike the production ranking, the self-sufficiency score seems to be **rather unstable**. It is interesting to note that the countries which were by far **top producers do no stand out early on**. For instance, China does not appear in the highest score until 1990. The most surprising results came from **African countries** such as South Africa, the United Republic of Tanzania, Nigeria and the Ivory Coast that constantly have a **score competing with the richest countries** which was unexpected. (***See import/export and production***). Even though the general trend tends to show that **richer countries are more independent**, there are **outliers** and the score seems to have a pretty **high variance**.
 
 ### create and add bar plot with self sufficiency for aspec year and some countries?!
 
@@ -1514,6 +1514,6 @@ TODO **TODO**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **China, USA, Brazil**. These are the countries that feed the world. They are the biggest producers in almost all categories. 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We observe a **strong correlation between wealth and production in general**. There is probably also a **mutual causality** between the two observations, meaning that the more you produce the wealthier you are and the wealthier you are then the more you can produce. But more interestingly, we also observe that the amount of **agricultural trade** a country engages in has an even higher positive impact on their GDP. Most of the features selected are about trade: whether its about exporting maize or importing tomatoes, being an important part of the **global interconnected economy** turns out to be postive for economic growth. In light of recent trends by especially the US to become more sceptical of global trade, it could be relevant to keep in mind what consequences might come from this. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We observe a **strong correlation between wealth and production in general**. There is probably also a **mutual causality** between the two observations, meaning that the more you produce the wealthier you are and the wealthier you are then the more you can produce. But more interestingly, we also observe that the amount of **agricultural trade** a country engages in has an even higher positive impact on their GDP. Most of the features selected are about trade: whether it's about exporting maize or importing tomatoes, being an important part of the **global interconnected economy** turns out to be positive for economic growth. Considering recent trends by especially the US to become more skeptical of global trade, it could be relevant to keep in mind what consequences might come from this. 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Another important conclusion we make is the prominent role of **animal agriculture**. The highest valued feature is **green maize**, which is only used to **feed animals**. Many other features are **live animal imports** and or otherwise linked to crops, which are to a significant extent raised for animal food as well. It takes a lot more land, energy and ressources to produce food from animals, so it makes sense that mostly richer countries are able to afford having a diet with many animal products. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Another important conclusion we make is the prominent role of **animal agriculture**. The highest valued feature is **green maize**, which is only used to **feed animals**. Many other features are **live animal imports** and or otherwise linked to crops, which are to a significant extent raised for animal food as well. It takes a lot more land, energy and resources to produce food from animals, so it makes sense that mostly richer countries can afford having a diet with many animal products. 
