@@ -1410,11 +1410,16 @@ document.getElementById("defaultOpenTrade").click();
 </script>  
 </div>
 
-What other trends can we notice from the tradebalances? At first sight, it might seem that for most of the features, some of the biggest global economies have inconsistent trade balances and thus it is surprising we can find correlations at all. Lets take pigs as an example: in 1998 France was one of the most important exporters of live pigs, whereas in 1999 it was suddenly one of the most important importers. From 2007 to 2008 we see an equally big shift for Spain. Nevertheless, this leads to an interesting observation: even though developed countries are not being consistent in the directions of their trade balance, they still tend to stay among the most trading countries by volume. 
+What other trends can we notice from the trade balances? At first sight, it might seem that for most of the features, some of the biggest global economies have **inconsistent trade balances** and thus it is surprising we can find correlations at all. Lets take pigs as an example: in 1998 France was one of the most important exporters of live pigs, whereas in 1999 it was suddenly one of the most important importers. From 2007 to 2008, we see an equally big shift for Spain. Nevertheless, this leads to an interesting observation: even though developed countries are not being consistent in the directions of their trade balance, they still tend to stay among the **most trading countries by volume**. 
 
 
 
 ### add Graph trend for pigs!?
+
+### Live animals on ships?
+Even though many **animal rights activists** are strongly campaigning against it, **millions of live animals** are being transported in gruesome conditions around the world every year. Their final destination is usually the slaughterhouse. When countries income level rises, the **demand for meat** increases with it. Meat consumption is regarded as a symbol of wealth across cultures. The economic benefits of transporting the animals alive is twofold: on one hand, the costs are reduced, since the it is more **expensive to keep the meat frozen** during transport and on the other hand, consumers usually prefer their meat as fresh as possible. The live trade industry is booming so it's no surprise that many of the strongest features identified by our model come from it. 
+
+### Maybe even add picture of a shipping container?!
 
 
 ## Self-sufficency <a name="selfsufficiency"></a>
