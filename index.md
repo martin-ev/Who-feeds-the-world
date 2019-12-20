@@ -100,7 +100,7 @@
 
 ### Which features are the most influential features on the Gross Domestic Product? 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Using a **knowledge**-based method as well as a more **technical**,  data analysis algorithm, we were able to select specific features. However, as we expect the most influential goods to not only have high correlation with GDP, but to also be globally relevant in production volume, we narrowed down our possible choice of features. With all of this, our model managed to pick out some features that could optimize GDP. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Using a **knowledge**-based method as well as a more **technical**,  data analysis algorithm, we were able to select specific features. However, as we expect the most influential goods do not only have high correlation with GDP, but to also be globally relevant in production volume, we narrowed down our possible choice of features. With all of this, our model managed to pick out some features that could optimize GDP. 
 
 Below is the full list of the selected features, sorted by order of importance attributed by the model:
 
