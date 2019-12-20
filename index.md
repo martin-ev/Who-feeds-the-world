@@ -2,8 +2,7 @@
 
 ### What are the insights of this data story?
 
-<div style="float: right; width: 45%; margin: 5% 5% 5% 5%; 
-;" w3-include-html="plots/wordcloud2.html"></div>
+<div style="float: right; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/wordcloud2.html"></div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Since the Neolithic Revolution, agriculture **feeds the world's population**. Even today, the agricultural sector **employs a large part of humanity** and is a **major part of the economy** of developed and developing countries. In the history of mankind, the **economic growth of countries** has almost always been accompanied by the development of agriculture and the **agricultural economy**, *i.e.* **production, imports and exports**. In this data story we want to explore different links between the agriculture and the economic success of countries. Which crops are produced, and which animals are traded by richer countries? Do they tend to be net exporters or importers of food? Do they tend to be self-sufficient? We try to answer all these questions and show many interesting insights along the way.
 
@@ -695,7 +694,13 @@ document.getElementById("defaultOpenProd").click();
 </script>  
 </div>
 
+
+<div style="float: right; width: 100%; margin: 0% 0% 0% 0%; min-width: 300px;" w3-include-html="plots/wheat.production.html"></div>
+
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Globally, all features that we identified seem to **follow a common trend**. The **biggest producers** are in almost all categories **China, the USA and Brazil**. Russia, France, Spain, Germany seem to get closer to their volumes. The rest of Europe is situated in the second or third tier of producers as well as the other developed countries (Australia, Canada, south American countries). In most categories, north and south African countries are situated in the same orders of magnitude as developed countries. A general trend to observe is that **central African countries seem to produce very few resources** in comparison to the rest of the world. The only feature going against this general description seems to be **cattle**. The production of cattle appears to be **very well distributed** throughout the world. The production of pigs also seems well distributed throughout the world except for countries excluding pork from their diet for religious purposes. The phenomenon might be explained by the increased difficulty in transporting these goods. **Live animals and meat transport are much more complicated** than grain, vegetables or forage. Meaning that the countries would generally **produce what they need** in terms of meat and rather import crops or vegetables.  
+
+<div style="clear: right; width: 100%;"></div>
 
 ### Are big producers wealthier? 
 
