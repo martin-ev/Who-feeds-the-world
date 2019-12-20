@@ -713,7 +713,6 @@ document.getElementById("defaultOpenProd").click();
 
 ## Global Trade Balances <a name="balances"></a>
 
-<div style="float: right; width: 100%; margin: 0% 0% 0% 0%;" w3-include-html="plots/Corr_matrix_ada.html"></div>
 <div style="clear: right; width: 100%;"></div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In this part, we want to pick out a few of the identified features and look at where in the world they are most exported from and imported to. 
@@ -1495,7 +1494,8 @@ $$\frac{Production \times 100}{Production + Imports – Exports}$$
 </div>
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Unlike the production ranking, the self-sufficiency score seems to be **rather unstable**. It is interesting to note that the countries which were by far **top producers do no stand out early on**. For instance, China does not appear in the highest score until 1990. The most surprising results came from **African countries** such as South Africa, the United Republic of Tanzania, Nigeria and the Ivory Coast that constantly have a **score competing with the richest countries** which was unexpected. (***See import/export and production***). Even though the general trend tends to show that **richer countries are more independent**, there are **outliers** and the score seems to have a pretty **high variance**. We also attempted to correlate the self sufficiency score with both the gross domestic product (GDP) and consummer price index (CPI), however we did not find any relevant results. The features that we selected did not include only production data but also trading data which might bias the way we score each countries, in particular import quantities. It would make sense for rich countries to be able to import bigger quantities therefore lowering their scores pretty significantly.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Unlike the production ranking, the self-sufficiency score seems to be **rather unstable**. It is interesting to note that the countries which were by far **top producers do no stand out early on**. For instance, China does not appear in the highest scores until 1990. The most surprising results came from **African countries** such as South Africa, the United Republic of Tanzania, Nigeria and the Ivory Coast that constantly have a **score competing with the richest countries** which was unexpected. However this might be explained by the presence of green maize within the calculation of this score and if you recall the producers map presented previously, all these countries were producing pretty large amount of green maize and exporting most of them which would considerably impact their scores. Even though the general trend tends to show that **richer countries are more independent**, there are **outliers** and the score seems to have a pretty **high variance** as well as being **fairly evenly distributed**.  
+We also attempted to correlate the self sufficiency score with both the gross domestic product (GDP) and consummer price index (CPI), however we did not find any relevant results. The features that we selected did not include only production data but also trading data which might bias the way we score each countries, in particular import quantities. It would make sense for rich countries to be able to import bigger quantities therefore lowering their scores pretty significantly.
 
 ## Conclusion <a name="conclusion"></a>
 
