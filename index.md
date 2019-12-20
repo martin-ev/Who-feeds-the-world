@@ -85,13 +85,14 @@
 <div style="clear: left; width: 100%;"></div>
 
 ## About the dataset <a name="dataset"></a>
+
 The data that we use for analysis comes from the **"Global Food & Agriculture Statistic"**. It is a dataset by the **Food and Agriculture Organization of the United Nations** and includes extensive information about many factors related to agriculture, such as production output, food prices, trade balances and environmental impacts among others. It includes countrywise yearly values from 1970 to 2015. 
 
 ## Our approach
+
+<div style="float: right; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/inflationrates.html"></div>
+
 How to measure economic success? The first and most intuitive is to use the **Gross Domestic Product** of countries. The second approach we took was **price stability**, expressed in low levels of inflation and thus small changes in the **Consumer Price Index**. Can we create a model that will tell us which products to produce and which to trade to **maximize for GDP** or **minimize for inflation**? As it turned out, price stability did not yield significant correlations to any production or trade. GDP however did... 
-
-## Add graph of inflation evolution?
-
 
 ## Most important agricultural and economical features <a name="features"></a>
 
@@ -697,7 +698,8 @@ document.getElementById("defaultOpenProd").click();
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Globally, all features that we identified seem to **follow a common trend**. The **biggest producers** are in almost all categories **China, the USA and Brazil**. Russia, France, Spain, Germany seem to get closer to their volumes. The rest of Europe is situated in the second or third tier of producers as well as the other developed countries (Australia, Canada, south American countries). In the majority of categories, north and south African countries are situated in the same orders of magnitude as developed countries. A general trend to observe is that **central African countries seem to produce very few resources** in comparison to the rest of the world. The only feature going against this general description seems to be **cattle**. The production of cattle appears to be **very well distributed** throughout the world. The production of pigs also seems well distributed throughout the world except for countries excluding pork from their diet for religious purposes. The phenomenon might be explained by the increased difficulty in transporting these goods. Live animals and meat **transport is much more complicated** than grain, vegetables or forage. Meaning that the countries would generally **produce what they need** in terms of meat and rather import crops or vegetables.  
 
-### ADD barplot with cattle and maybe another production in a specific year?
+<div style="float: right; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/barplotcattleprod.html"></div>
+
 
 ### Are big producers wealthier? 
 
@@ -776,7 +778,7 @@ In this part, we want to pick out a few of the identified features and look at w
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  We see that until the 80s no country in the world was a strong net exporter of green maize. It was barely even exported or imported in any country. Starting from the mid 80s the **United States** emerge as the main net exporter. During the 90s and into recent years, some more countries emerge that are net exporters, mainly in Europe. Globally, the United States stays the single most important exporter of this agricultural product throughout the years, which is probably why our model identified it as the **strongest predictor of GDP**.
 
-## ADD trend extracted from notebook?!
+<div style="float: right; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/maizeimports.html"></div>
 
 ### Which countries are net importers of tomatoes?
 
@@ -834,7 +836,7 @@ In this part, we want to pick out a few of the identified features and look at w
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Being a tomato importer, but also a tomato producer seems to be a **good predictor of wealth for the state**. Tomatoes are one of the most **important vegetable crops produced worldwide**, only potatoes have a higher production. Looking through the timeline, we clearly see that almost all **highly industrialized nations are continuously importing tomatoes**. Especially the United States, France and Germany are importing large quantities each year. It's not a big surprise, since tomatoes are a **popular ingredient in many modern western recipes**, but **require a climate** that is not well suited for most of the United States or Northern Europe.
 
-## Add trend graph from notebook?!
+<div style="float: right; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/tomatoesimports.html"></div>
 
 
 ### What can we say about the other trade features of interest?
@@ -843,10 +845,10 @@ Just as we've seen for the production, the trade balances of our features also f
 
 
 ### Live animals on ships?
+
+<div style="float: right; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/shippingcontainer.html"></div>
+
 Even though many **animal rights activists** are strongly campaigning against it, **millions of live animals** are being transported in gruesome conditions around the world every year. Their final destination is usually the slaughterhouse. When countries income level rises, the **demand for meat** increases with it. Meat consumption is regarded as a symbol of wealth across cultures. The economic benefits of transporting the animals alive is twofold: on one hand, the costs are reduced, since the it is more **expensive to keep the meat frozen** during transport and on the other hand, consumers usually prefer their meat as fresh as possible. The live trade industry is booming so it's no surprise that many of the strongest features identified by our model come from it. 
-
-### Maybe even add picture of a shipping container?!
-
 
 ### Who imports and exports them?
 
@@ -1422,11 +1424,7 @@ document.getElementById("defaultOpenTrade").click();
 
 What other trends can we notice from the trade balances? At first sight, it might seem that for most of the features, some of the biggest global economies have **inconsistent trade balances** and thus it is surprising we can find correlations at all. Lets take pigs as an example: in 1998 France was one of the most important exporters of live pigs, whereas in 1999 it was suddenly one of the most important importers. From 2007 to 2008, we see an equally big shift for Spain. Nevertheless, this leads to an interesting observation: even though developed countries are not being consistent in the directions of their trade balance, they still tend to stay among the **most trading countries by volume**. 
 
-
-
-### add Graph trend for pigs!?
-
-
+<div style="float: right; width: 45%; margin: 5% 5% 5% 5%; min-width: 300px;" w3-include-html="plots/pigtradebalance.html"></div>
 
 ## Self-sufficency <a name="selfsufficiency"></a>
 
