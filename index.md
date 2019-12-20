@@ -712,6 +712,9 @@ document.getElementById("defaultOpenProd").click();
 
 ## Global Trade Balances <a name="balances"></a>
 
+<div style="float: right; width: 100%; margin: 0% 0% 0% 0%;" w3-include-html="plots/Corr_matrix_ada.html"></div>
+<div style="clear: right; width: 100%;"></div>
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In this part, we want to pick out a few of the identified features and look at where in the world they are most exported from and imported to. 
 
 ### What is green maize?
