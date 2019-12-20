@@ -1,1 +1,7 @@
 theme: jekyll-theme-cayman
+
+# Set the text alignment in the posts.
+text_align:
+  # Available values: start | end | left | right | center | justify | justify-all | match-parent
+  desktop: justify
+  mobile: justify
